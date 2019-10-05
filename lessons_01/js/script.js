@@ -58,3 +58,9 @@ div7.innerHTML = '<img src="https://cdn4.iconfinder.com/data/icons/food-and-drin
 let z1 = 6
 let z2 = 3
 document.querySelector('.eight').innerHTML = z1 * z2
+
+
+// #15
+let y1 = 6
+let y2 = 3
+document.querySelector('.nine').innerHTML = y1 / y2
