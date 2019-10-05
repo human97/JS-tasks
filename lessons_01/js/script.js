@@ -52,3 +52,9 @@ a.innerHTML = 3.1415
 // #13
 let div7 = document.querySelector('.seven')
 div7.innerHTML = '<img src="https://cdn4.iconfinder.com/data/icons/food-and-drink-flat-gradient/32/cone_ice_cream_food_drink_sweet-512.png" alt="pic">'
+
+
+// #14
+let z1 = 6
+let z2 = 3
+document.querySelector('.eight').innerHTML = z1 * z2
