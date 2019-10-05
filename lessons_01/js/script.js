@@ -42,3 +42,8 @@ document.querySelector('.three').innerHTML = '<h3>Hi</h3>'
 let four = document.querySelector('.four')
 four.innerHTML = '<h4>Hello</h4>'
 four.innerHTML += '<p>world!</p>'
+
+
+// #12
+let a = document.querySelector('.five')
+a.innerHTML = 3.1415
