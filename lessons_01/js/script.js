@@ -36,3 +36,9 @@ document.querySelector('span').textContent = 'world'
 
 // #10
 document.querySelector('.three').innerHTML = '<h3>Hi</h3>'
+
+
+// #11
+let four = document.querySelector('.four')
+four.innerHTML = '<h4>Hello</h4>'
+four.innerHTML += '<p>world!</p>'
