@@ -64,3 +64,9 @@ document.querySelector('.eight').innerHTML = z1 * z2
 let y1 = 6
 let y2 = 3
 document.querySelector('.nine').innerHTML = y1 / y2
+
+
+// #16
+let x1 = 'Hello'
+x2 = 5
+document.querySelector('.ten').innerHTML = x1 + x2
