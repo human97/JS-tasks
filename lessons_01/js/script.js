@@ -70,3 +70,8 @@ document.querySelector('.nine').innerHTML = y1 / y2
 let x1 = 'Hello'
 x2 = 5
 document.querySelector('.ten').innerHTML = x1 + x2
+
+
+// #17
+let d1 = document.querySelector('.test-1')
+console.log(d1)
