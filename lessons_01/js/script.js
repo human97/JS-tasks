@@ -75,3 +75,10 @@ document.querySelector('.ten').innerHTML = x1 + x2
 // #17
 let d1 = document.querySelector('.test-1')
 console.log(d1)
+
+
+// #18
+let d2 = document.querySelector('.test-2')
+console.log(d2)
+d2 = 5
+console.log(d2)
