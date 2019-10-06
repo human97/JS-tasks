@@ -82,3 +82,10 @@ let d2 = document.querySelector('.test-2')
 console.log(d2)
 d2 = 5
 console.log(d2)
+
+
+// #19
+let divS3=document.querySelector('.s3')
+console.log(divS3)
+divS3=document.querySelector('.s4')
+console.log(divS3)
