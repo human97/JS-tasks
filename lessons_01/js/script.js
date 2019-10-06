@@ -89,3 +89,7 @@ let divS3=document.querySelector('.s3')
 console.log(divS3)
 divS3=document.querySelector('.s4')
 console.log(divS3)
+
+
+// #20
+// document.querySelector('body').innerHTML=''
