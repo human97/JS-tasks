@@ -150,19 +150,31 @@ const div11 = document.querySelector(".div11")
 const num6 = 6
 const num7 = 7
 let out11 = ""
-for (let i = 1; i <= 9; i++){
+for (let i = 1; i <= 9; i++) {
   for (let k = 1; k <= 9; k++) {
-    out11+=`<p>${num6} * ${k} = ${num6*k}</p>`
+    out11 += `<p>${num6} * ${k} = ${num6*k}</p>`
   }
-  out11+=`<hr>`
+  out11 += `<hr>`
   break
 }
 
-for (let i = 1; i <= 9; i++){
+for (let i = 1; i <= 9; i++) {
   for (let k = 1; k <= 9; k++) {
-    out11+=`<p>${num7} * ${k} = ${num7*k}</p>`
+    out11 += `<p>${num7} * ${k} = ${num7*k}</p>`
   }
-  
+
   break
 }
-div11.innerHTML+=`<div>${out11}</div>`
+div11.innerHTML += `<div>${out11}</div>`
+
+// #12
+const div12 = document.querySelector('.div12')
+let out12 = ''
+for (let i = 1; i <= 5; i++) {
+  for (k = 1; k <= i; k++) {
+    out12 += `${k} `
+  }
+  out12 += `<br>`
+}
+
+div12.innerHTML = out12
