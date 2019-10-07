@@ -212,4 +212,4 @@ for (let i = 1; i <= 5; i++) {
   out15 += `<br>`
 }
 
-div15.innerHTML = out15
+div15.innerHTML = `<pre>${out15}</pre>`
