@@ -213,3 +213,15 @@ for (let i = 1; i <= 5; i++) {
 }
 
 div15.innerHTML = `<pre>${out15}</pre>`
+
+// #16
+const div16 = document.querySelector('.div16')
+let out16 = ''
+for(let i=1;i<=5;i++){
+  for(let k=1;k<=i;k++){
+    out16+=`${i}&nbsp`
+  }
+  out16+=`<br>`
+}
+
+div16.innerHTML=`<pre>${out16}</pre>`
