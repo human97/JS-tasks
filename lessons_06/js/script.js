@@ -178,3 +178,15 @@ for (let i = 1; i <= 5; i++) {
 }
 
 div12.innerHTML = out12
+
+// #13
+const div13 = document.querySelector('.div13')
+let out13 = ''
+for (let i = 0; i < 50; i += 10) {
+  for (let k = 1; k <= 10; k++) {
+    out13 += i < 10 && k < 10 ? `0${k} ` : `${i+k} `
+  }
+  out13 += `<br>`
+}
+
+div13.innerHTML = out13
