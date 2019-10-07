@@ -217,11 +217,23 @@ div15.innerHTML = `<pre>${out15}</pre>`
 // #16
 const div16 = document.querySelector('.div16')
 let out16 = ''
-for(let i=1;i<=5;i++){
-  for(let k=1;k<=i;k++){
-    out16+=`${i}&nbsp`
+for (let i = 1; i <= 5; i++) {
+  for (let k = 1; k <= i; k++) {
+    out16 += `${i}&nbsp`
   }
-  out16+=`<br>`
+  out16 += `<br>`
 }
 
-div16.innerHTML=`<pre>${out16}</pre>`
+div16.innerHTML = `<pre>${out16}</pre>`
+
+// #17
+const div17 = document.querySelector('.div17')
+let out17 = ''
+for (let i = 5; i > 0; i--) {
+  for (let k = 5; k >= i; k--) {
+    out17 += `${i}&nbsp`
+  }
+  out17 += `<br>`
+}
+
+div17.innerHTML = `<pre>${out17}</pre>`
