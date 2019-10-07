@@ -109,14 +109,14 @@ for (let i = 1; i <= 5; i++) {
       if (k === 1 || k === 6) {
         out9 += '*'
       } else {
-        out9 += '&#160 '
+        out9 += '&#160'
       }
     }
   }
   out9 += '<br>'
 }
 
-div9.innerHTML = out9
+div9.innerHTML = `<code>${out9}</code>`
 
 // #10
 let inp10 = document.querySelector(".inp10")
@@ -125,7 +125,6 @@ let inp10Val
 let out10 = ""
 inp10.oninput = function () {
   inp10Val = inp10.value
-  console.log(inp10Val)
   for (let i = 1; i <= 5; i++) {
     for (let k = 1; k <= 6; k++) {
       if (i === 1 || i === 5) {
@@ -134,7 +133,7 @@ inp10.oninput = function () {
         if (k === 1 || k === 6) {
           out10 += inp10Val
         } else {
-          out10 += '&#160 '
+          out10 += '&nbsp'
         }
       }
 
@@ -142,7 +141,7 @@ inp10.oninput = function () {
     out10 += '<br>'
   }
 
-  div10.innerHTML = out10
+  div10.innerHTML = `<code>${out10}</code>`
 }
 
 // #11
@@ -190,3 +189,15 @@ for (let i = 0; i < 50; i += 10) {
 }
 
 div13.innerHTML = out13
+
+// #14
+const div14 = document.querySelector('.div14')
+let out14 = ''
+for (let i = 5; i > 0; i--) {
+  for (let k = i; k > 0; k--) {
+    out14 += `${k} `
+  }
+  out14 += `<br>`
+}
+
+div14.innerHTML = out14
