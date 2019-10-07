@@ -183,7 +183,7 @@ const div13 = document.querySelector('.div13')
 let out13 = ''
 for (let i = 0; i < 50; i += 10) {
   for (let k = 1; k <= 10; k++) {
-    out13 += i < 10 && k < 10 ? `0${k} ` : `${i+k} `
+    out13 += i < 10 && k < 10 ? `0${k}&nbsp` : `${i+k}&nbsp`
   }
   out13 += `<br>`
 }
@@ -195,9 +195,21 @@ const div14 = document.querySelector('.div14')
 let out14 = ''
 for (let i = 5; i > 0; i--) {
   for (let k = i; k > 0; k--) {
-    out14 += `${k} `
+    out14 += `${k}&nbsp`
   }
   out14 += `<br>`
 }
 
 div14.innerHTML = out14
+
+// #15
+const div15 = document.querySelector('.div15')
+let out15 = ''
+for (let i = 1; i <= 5; i++) {
+  for (let k = 5; k > 0; k--) {
+    out15 += k <= i ? `${k}&nbsp` : `X&nbsp`
+  }
+  out15 += `<br>`
+}
+
+div15.innerHTML = out15
