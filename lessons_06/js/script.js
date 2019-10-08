@@ -272,3 +272,21 @@ for (let i = 1; i <= 3; i++) {
 }
 
 div19.innerHTML = `<pre>${out19}</pre>`
+
+// #20
+const div20 = document.querySelector('.div20')
+let out20 = ''
+for (let i = 1; i <= 5; i++) {
+  for (let k = 1; k <= 6; k++) {
+    if ((i === 1 || i === 5) && (k < 3 || k > 4)) {
+      out20 += `&nbsp`
+    } else if ((i === 2 || i === 4) && (k < 2 || k > 5)) {
+      out20 += `&nbsp`
+    } else {
+      out20 += `*`
+    }
+  }
+  out20 += `<br>`
+}
+
+div20.innerHTML = `<pre>${out20}</pre>`
