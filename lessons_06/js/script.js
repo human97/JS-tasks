@@ -75,7 +75,7 @@ let div7 = document.querySelector(".div7");
 let out7 = "";
 for (let i = 3; i > 0; i--) {
   for (let k = 0; k < i; k++) {
-    out7 += "&#160 ";
+    out7 += "&nbsp";
   }
   for (let z = 0; z < 5; z++) {
     out7 += "*";
@@ -109,7 +109,7 @@ for (let i = 1; i <= 5; i++) {
       if (k === 1 || k === 6) {
         out9 += '*'
       } else {
-        out9 += '&#160'
+        out9 += '&nbsp'
       }
     }
   }
@@ -254,3 +254,21 @@ for (let i = 5; i > 0; i--) {
 }
 
 div18.innerHTML = `<pre>${out18}</pre>`
+
+// #19
+const div19 = document.querySelector('.div19')
+let out19 = ''
+for (let i = 1; i <= 3; i++) {
+  for (let k = 1; k <= 9; k++) {
+    if (i === 1 && (k < 3 || k > 7)) {
+      out19 += `&nbsp`
+    } else if (i === 2 && (k < 2 || k > 8)) {
+      out19 += `&nbsp`
+    } else {
+      out19 += `*`
+    }
+  }
+  out19 += `<br>`
+}
+
+div19.innerHTML = `<pre>${out19}</pre>`
