@@ -237,3 +237,20 @@ for (let i = 5; i > 0; i--) {
 }
 
 div17.innerHTML = `<pre>${out17}</pre>`
+
+// #18
+const div18 = document.querySelector('.div18')
+let out18 = ''
+for (let i = 5; i > 0; i--) {
+  for (let k = 5; k >= i; k--) {
+    if (i % 2 === 0) {
+      out18 += `X&nbsp`
+    } else {
+      out18 += `${i}&nbsp`
+    }
+    //out18 += i % 2 === 0 ? `X&nbsp` : `${i}&nbsp`  // это сокращенный вариант без if else, через тернарный оператор
+  }
+  out18 += `<br>`
+}
+
+div18.innerHTML = `<pre>${out18}</pre>`
