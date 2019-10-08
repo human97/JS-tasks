@@ -168,3 +168,15 @@ const sel18 = document.getElementById('sel18')
 sel18.onchange = function () {
     div18.textContent = sel18.value
 }
+
+// #19
+const inp19 = document.getElementById('inp19')
+const pass19 = document.getElementById('pass19')
+const btn19 = document.getElementById('btn19')
+let inp19Val
+let pass19Val
+btn19.onclick = function () {
+    inp19Val = inp19.value
+    pass19Val = pass19.value
+    console.log(inp19Val, pass19Val)
+}
