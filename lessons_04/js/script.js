@@ -162,3 +162,9 @@ let btn16 = document.getElementById('btn16')
 btn16.onclick = function () {
     div16.textContent = sel16.value
 }
+
+// #18
+const sel18 = document.getElementById('sel18')
+sel18.onchange = function () {
+    div18.textContent = sel18.value
+}
