@@ -78,7 +78,7 @@ btn5.onclick = function () {
   console.log(name5())
 }
 
-// #07
+// #06
 const btn6 = document.getElementById('btn6')
 
 function returnNum06(num1, num2) {
@@ -100,5 +100,22 @@ const returnNum006 = (num1, num2) => {
   return num1 >= num2 ? num1 : num2
 }
 
-btn6.onclick = () => console.log(returnNum006(80, 90)) *
-  /
+btn6.onclick = () => console.log(returnNum006(80, 90)) 
+*/
+
+// #07
+const btn7 = document.querySelector('.btn7')
+/*
+function yearBorn07(born) {
+  return console.log(2019 - born)
+}
+
+btn7.onclick = function () {
+  yearBorn07(1900)
+}
+*/
+const yearBorn007 = born => {
+  return console.log(2019 - born)
+}
+
+btn7.onclick = () => yearBorn007(1900)
