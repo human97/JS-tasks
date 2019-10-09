@@ -57,3 +57,23 @@ function colorRed04() {
 }
 
 btn04.onclick = colorRed04
+
+// #05
+const btn5 = document.getElementById('btn5')
+const inp5 = document.getElementById('inp5')
+
+/*
+const name05 = () => {
+  return inp5.value
+}
+
+btn5.onclick = () => console.log(name05())
+*/
+
+function name5() {
+  return inp5.value
+}
+
+btn5.onclick = function () {
+  console.log(name5())
+}
