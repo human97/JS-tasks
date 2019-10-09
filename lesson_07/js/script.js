@@ -42,3 +42,18 @@ btn03.onclick = function () {
     num03(5)
   }
   */
+
+// #04
+const btn04 = document.querySelector('#btn04')
+/*
+const colorRed004 = () => {
+  btn04.style.backgroundColor = 'red'
+}
+
+btn04.onclick = () => colorRed004()
+*/
+function colorRed04() {
+  btn04.style.backgroundColor = 'red'
+}
+
+btn04.onclick = colorRed04
