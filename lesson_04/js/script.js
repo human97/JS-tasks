@@ -175,8 +175,23 @@ const pass19 = document.getElementById('pass19')
 const btn19 = document.getElementById('btn19')
 let inp19Val
 let pass19Val
-btn19.onclick = function () {
+btn19.onclick = function (e) {
+    e.preventDefault()
     inp19Val = inp19.value
     pass19Val = pass19.value
     console.log(inp19Val, pass19Val)
+}
+
+// #20
+const form20 = document.forms.form20
+const inp20 = form20.elements.inp20
+const pass20 = form20.elements.pass20
+const btn20 = form20.elements.btn20
+let inp20Val
+let pass20Val
+btn20.onclick = function (e) {
+    e.preventDefault()
+    inp20Val = inp20.value
+    pass20Val = pass20.value
+    console.log(inp20Val, pass20Val)
 }
