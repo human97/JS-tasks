@@ -77,3 +77,28 @@ function name5() {
 btn5.onclick = function () {
   console.log(name5())
 }
+
+// #07
+const btn6 = document.getElementById('btn6')
+
+function returnNum06(num1, num2) {
+  if (num1 > num2) {
+    return num1
+  } else if (num1 < num2) {
+    return num2
+  } else {
+    return (num1 || num2)
+  }
+}
+
+btn6.onclick = function () {
+  console.log(returnNum06(80, 80))
+}
+
+/*
+const returnNum006 = (num1, num2) => {
+  return num1 >= num2 ? num1 : num2
+}
+
+btn6.onclick = () => console.log(returnNum006(80, 90)) *
+  /
