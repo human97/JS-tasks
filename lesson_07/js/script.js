@@ -22,4 +22,23 @@ const consoleName002 = name => {
 }
 
 btn02.onclick = () => consoleName002('Sergey')
-*/ 
+*/
+
+// #03
+
+const num003 = num => {
+  console.log(num * 10)
+}
+
+btn03.onclick = () => num003(7)
+
+/*
+function num03(num) {
+  console.log(num * 10)
+}
+
+const btn03 = document.querySelector('#btn03')
+btn03.onclick = function () {
+    num03(5)
+  }
+  */
