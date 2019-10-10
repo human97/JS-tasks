@@ -166,7 +166,7 @@ btn9.onclick = function () {
 
 // #10
 const btn10 = document.querySelector('.btn10')
-const div10 = document.querySelector('.div10')
+const div10 = document.querySelector('.div07_10')
 let color1
 let color2
 let color3
@@ -184,15 +184,15 @@ btn10.onclick = function () {
     }
     rgbColor10 = `rgb(${color1}, ${color2}, ${color3})`
   }
-  div10.style.width = `50px`
-  div10.style.height = `50px`
-  div10.style.backgroundColor = `${rgbColor10}`
+  div07_10.style.width = `50px`
+  div07_10.style.height = `50px`
+  div07_10.style.backgroundColor = `${rgbColor10}`
 }*/
 
 const rgbColor10Str = () => `rgb(${getRandomIntInclusive(0, 255)}, ${getRandomIntInclusive(0, 255)}, ${getRandomIntInclusive(0, 255)})`
 
 btn10.onclick = () => {
-  div10.style.width = `50px`
-  div10.style.height = `50px`
-  div10.style.background = rgbColor10Str()
+  div07_10.style.width = `50px`
+  div07_10.style.height = `50px`
+  div07_10.style.background = rgbColor10Str()
 }
