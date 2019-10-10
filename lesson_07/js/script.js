@@ -163,3 +163,36 @@ const btn9 = document.querySelector('.btn9')
 btn9.onclick = function () {
   console.log(getRandomIntInclusive(1, 1000))
 }
+
+// #10
+const btn10 = document.querySelector('.btn10')
+const div10 = document.querySelector('.div10')
+let color1
+let color2
+let color3
+let rgbColor10 = ''
+/*
+btn10.onclick = function () {
+  for (let i = 0; i < 3; i++) {
+    if (i === 0) {
+      color1 = getRandomIntInclusive(0, 255)
+    } else if (i === 1) {
+      color2 = getRandomIntInclusive(0, 255)
+    } else {
+      color3 = getRandomIntInclusive(0, 255)
+
+    }
+    rgbColor10 = `rgb(${color1}, ${color2}, ${color3})`
+  }
+  div10.style.width = `50px`
+  div10.style.height = `50px`
+  div10.style.backgroundColor = `${rgbColor10}`
+}*/
+
+const rgbColor10Str = () => `rgb(${getRandomIntInclusive(0, 255)}, ${getRandomIntInclusive(0, 255)}, ${getRandomIntInclusive(0, 255)})`
+
+btn10.onclick = () => {
+  div10.style.width = `50px`
+  div10.style.height = `50px`
+  div10.style.background = rgbColor10Str()
+}
