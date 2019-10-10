@@ -120,6 +120,7 @@ const yearBorn007 = born => {
 
 btn7.onclick = () => yearBorn007(1919)
 
+
 // #08
 const btn8 = document.querySelector('.btn8')
 
@@ -136,22 +137,29 @@ const btn8 = document.querySelector('.btn8')
 }*/
 
 // Получение случайного Целого числа в заданном интервале, *Включительно*
-/*function getRandomIntInclusive(min, max) {
+function getRandomIntInclusive(min, max) {
   min = Math.ceil(min)
   max = Math.floor(max)
   return Math.floor(Math.random() * (max - min + 1)) + min
 }
-
+/*
 btn8.onclick = function () {
   console.log(getRandomIntInclusive(1, 10))
-}
-*/
+}*/
 
 // упрощенный вариант со стрелочной функцией
-const getRandomIntInclusive = () => {
+const getRandomIntInclusiveS = () => {
   let min = Math.ceil(1)
   let max = Math.floor(10)
   return console.log(Math.floor(Math.random() * (10 - 1 + 1)) + 1)
 }
 
-btn8.onclick = () => getRandomIntInclusive()
+btn8.onclick = () => getRandomIntInclusiveS()
+
+
+// #09
+const btn9 = document.querySelector('.btn9')
+// функция getRandomIntInclusive описанна выше
+btn9.onclick = function () {
+  console.log(getRandomIntInclusive(1, 5368))
+}
