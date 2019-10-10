@@ -161,5 +161,5 @@ btn8.onclick = () => getRandomIntInclusiveS()
 const btn9 = document.querySelector('.btn9')
 // функция getRandomIntInclusive описанна выше
 btn9.onclick = function () {
-  console.log(getRandomIntInclusive(1, 5368))
+  console.log(getRandomIntInclusive(1, 1000))
 }
