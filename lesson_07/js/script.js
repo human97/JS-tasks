@@ -118,4 +118,4 @@ const yearBorn007 = born => {
   return console.log(2019 - born)
 }
 
-btn7.onclick = () => yearBorn007(1900)
+btn7.onclick = () => yearBorn007(1919)
