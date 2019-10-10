@@ -171,7 +171,7 @@ let color2
 let color3
 let rgbColor10 = ''
 /*
-btn10.onclick = function () {
+div10.onclick = function () {
   for (let i = 0; i < 3; i++) {
     if (i === 0) {
       color1 = getRandomIntInclusive(0, 255)
@@ -189,6 +189,6 @@ btn10.onclick = function () {
 
 const rgbColor10Str = () => `rgb(${getRandomIntInclusive(0, 255)}, ${getRandomIntInclusive(0, 255)}, ${getRandomIntInclusive(0, 255)})`
 
-btn10.onclick = () => {
+div10.onclick = () => {
   div10.style.background = rgbColor10Str()
 }
