@@ -124,19 +124,19 @@ btn7.onclick = () => yearBorn007(1919)
 const btn8 = document.querySelector('.btn8')
 
 // Получение случайного числа в заданном интервале
-function getRandomArbitrary(min, max) {
+/*function getRandomArbitrary(min, max) {
   return Math.random() * (max - min) + min
-}
+}*/
 
 // Получение случайного *Целого* числа в заданном интервале
-function getRandomInt(min, max) {
+/*function getRandomInt(min, max) {
   min = Math.ceil(min)
   max = Math.floor(max)
   return Math.floor(Math.random() * (max - min)) + min
-}
-/*
+}*/
+
 // Получение случайного Целого числа в заданном интервале, *Включительно*
-function getRandomIntInclusive(min, max) {
+/*function getRandomIntInclusive(min, max) {
   min = Math.ceil(min)
   max = Math.floor(max)
   return Math.floor(Math.random() * (max - min + 1)) + min
