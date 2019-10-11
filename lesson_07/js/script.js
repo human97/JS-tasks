@@ -209,3 +209,9 @@ console.log(ff11(f11(), 10))
 const f11 = () => 5
 const ff11 = (a, b) => a * b
 console.log(ff11(f11(), 10))
+
+// #12
+const inp12 = document.querySelector('.inp12')
+const btn12 = document.querySelector('.btn12')
+const toNum = (input) => +input.value
+btn12.onclick = () => console.log(toNum(inp12))
