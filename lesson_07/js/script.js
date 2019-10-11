@@ -192,3 +192,20 @@ const rgbColor10Str = () => `rgb(${getRandomIntInclusive(0, 255)}, ${getRandomIn
 div10.onclick = () => {
   div10.style.background = rgbColor10Str()
 }
+
+// #11
+/*
+function f11() {
+  return 5
+}
+
+function ff11(a, b) {
+  return a * b
+}
+
+console.log(ff11(f11(), 10))
+*/
+// стрелочные функции
+const f11 = () => 5
+const ff11 = (a, b) => a * b
+console.log(ff11(f11(), 10))
