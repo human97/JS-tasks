@@ -226,3 +226,16 @@ const emptyInput = (input) => {
 }
 
 btn13.onclick = () => console.log(emptyInput(inp13))
+
+// #14
+const btn14 = document.querySelector('.btn14')
+/*
+function f14(num) {
+  return num % 2 === 0
+}
+btn14.onclick = function(){ 
+  console.log(f14(48))}
+  */
+// стрелочная функция
+const f14S = num => num % 2 === 0
+btn14.onclick = () => console.log(f14S(45))
