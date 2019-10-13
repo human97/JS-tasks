@@ -219,7 +219,10 @@ btn12.onclick = () => console.log(toNum(inp12))
 // #13
 const inp13 = document.querySelector('.inp13')
 const btn13 = document.querySelector('.btn13')
-const emptyInput = (input) => input.value
-btn13.onclick = () => {
-  emptyInput(inp13).trim() != '' ? console.log(emptyInput(inp13).trim()) : console.log(false)
+let inp13Val
+const emptyInput = (input) => {
+  inp13Val = input.value
+  inp13Val.trim() != '' ? console.log(inp13Val.trim()) : console.log(false)
 }
+
+btn13.onclick = () => emptyInput(inp13)
