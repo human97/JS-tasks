@@ -251,3 +251,9 @@ div16.onmouseenter = () => console.log('onmouseenter')
 // #17
 const div17 = document.querySelector('.div07_17')
 div17.onmouseleave = () => console.log('onmouseleave')
+
+// #18
+const div18 = document.querySelector('.div07_18')
+div18.onclick = function () {
+  this.style.background = 'red'
+}
