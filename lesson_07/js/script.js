@@ -222,7 +222,7 @@ const btn13 = document.querySelector('.btn13')
 let inp13Val
 const emptyInput = (input) => {
   inp13Val = input.value
-  inp13Val.trim() != '' ? console.log(inp13Val.trim()) : console.log(false)
+  return inp13Val.trim() != '' ? inp13Val.trim() : false
 }
 
-btn13.onclick = () => emptyInput(inp13)
+btn13.onclick = () => console.log(emptyInput(inp13))
