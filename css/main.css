@@ -3,7 +3,11 @@ body {
 }
 
 /* styles for lesson#07 */
-.div07_10, .div07_15, .div07_16, .div07_17 {
+.div07_10,
+.div07_15,
+.div07_16,
+.div07_17,
+.div07_18 {
     text-align: center;
     width: 150px;
     height: 50px;
