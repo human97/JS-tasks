@@ -257,3 +257,7 @@ const div18 = document.querySelector('.div07_18')
 div18.onclick = function () {
   this.style.background = 'red'
 }
+
+// #19
+const div19 = document.querySelector('.div07_19')
+div19.onclick = () => this.style.background = 'red'
