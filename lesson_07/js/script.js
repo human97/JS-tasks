@@ -215,3 +215,11 @@ const inp12 = document.querySelector('.inp12')
 const btn12 = document.querySelector('.btn12')
 const toNum = (input) => +input.value
 btn12.onclick = () => console.log(toNum(inp12))
+
+// #13
+const inp13 = document.querySelector('.inp13')
+const btn13 = document.querySelector('.btn13')
+const emptyInput = (input) => input.value
+btn13.onclick = () => {
+  emptyInput(inp13).trim() != '' ? console.log(emptyInput(inp13).trim()) : console.log(false)
+}
