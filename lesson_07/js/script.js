@@ -261,3 +261,11 @@ div18.onclick = function () {
 // #19
 const div19 = document.querySelector('.div07_19')
 div19.onclick = () => this.style.background = 'red'
+
+// #20
+const divGo = document.querySelectorAll('.go')
+for (let i = 0; i < divGo.length; i++) {
+  divGo[i].onclick = function () {
+    this.style.background = 'red'
+  }
+}
