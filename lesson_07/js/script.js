@@ -247,3 +247,7 @@ div15.onmousemove = () => console.log('move')
 // #16
 const div16 = document.querySelector('.div07_16')
 div16.onmouseenter = () => console.log('onmouseenter')
+
+// #17
+const div17 = document.querySelector('.div07_17')
+div17.onmouseleave = () => console.log('onmouseleave')
