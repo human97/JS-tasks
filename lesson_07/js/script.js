@@ -243,3 +243,7 @@ btn14.onclick = () => console.log(f14S(45))
 // #15
 const div15 = document.querySelector('.div07_15')
 div15.onmousemove = () => console.log('move')
+
+// #16
+const div16 = document.querySelector('.div07_16')
+div16.onmouseenter = () => console.log('onmouseenter')
