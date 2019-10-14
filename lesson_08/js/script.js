@@ -26,3 +26,19 @@ function func_2(num1, num2) {
 }
 
 console.log(func_2(5, 14))
+
+// #03
+let out3 = ''
+
+function func_3(a, b) {
+    let max = a > b ? a : b
+    let min = a < b ? a : b
+    let p = max
+    while (p >= min) {
+        out3 += `${p} `
+        p--
+    }
+    return out3
+}
+
+console.log(func_3(8, 19))
