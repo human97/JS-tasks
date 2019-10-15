@@ -91,4 +91,25 @@ function func_6(a, b) {
     }
 }
 
-console.log(func_6(175, 105))
+console.log(func_6(15, 16))
+
+// #07
+let out7 = 0
+
+function func_7(a, b) {
+    if (a > b || a === 0) {
+        return false
+    } else if (b > a) {
+        let p = a
+        let out7 = a
+        while (p < b) {
+            p++
+            out7 *= p
+        }
+        return out7
+    } else {
+        return 'a = b'
+    }
+}
+
+console.log(func_7(10, 12))
