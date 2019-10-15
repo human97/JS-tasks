@@ -42,3 +42,19 @@ function func_3(a, b) {
 }
 
 console.log(func_3(8, 19))
+
+// #04
+let out4 = ''
+
+function func_4(a, b, c) {
+    let max = a > b ? a : b
+    let min = a < b ? a : b
+    let p = max
+    while (p >= min) {
+        out4 += `${p} `
+        p -= c
+    }
+    return out4
+}
+
+console.log(func_4(8, 19, 2))
