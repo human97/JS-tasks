@@ -58,3 +58,17 @@ function func_4(a, b, c) {
 }
 
 console.log(func_4(8, 19, 2))
+
+// #05
+let sum5 = 0
+
+function func_5() {
+    let p = 0
+    while (p <= 20) {
+        sum5 += p
+        p++
+    }
+    return sum5
+}
+
+console.log(func_5())
