@@ -72,3 +72,23 @@ function func_5() {
 }
 
 console.log(func_5())
+
+// #06
+let out6 = 0
+
+function func_6(a, b) {
+    if (a > b) {
+        return false
+    } else if (b > a) {
+        let p = a
+        while (p <= b) {
+            out6 += p
+            p++
+        }
+        return out6
+    } else {
+        return 'a = b'
+    }
+}
+
+console.log(func_6(175, 105))
