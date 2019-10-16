@@ -113,3 +113,17 @@ function func_7(a, b) {
 }
 
 console.log(func_7(10, 12))
+
+// #08
+let out8 = 333
+
+function func_8() {
+    let day = 0
+    while (out8 <= 1000000) {
+        day++
+        out8 *= 2
+    }
+    return day
+}
+
+console.log(func_8())
