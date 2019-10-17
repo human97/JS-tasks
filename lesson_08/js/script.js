@@ -144,3 +144,17 @@ function func_9(a, b) {
 }
 
 console.log(func_9(1, 9))
+
+// #10
+let out10 = ''
+
+function func_10() {
+    let p = 1
+    while (p <= 6) {
+        out10 += p % 2 === 0 ? `*<br>` : `**<br>`
+        p++
+    }
+    return out10
+}
+
+document.querySelector('.div10').innerHTML = `<pre>${func_10()}</pre>`
