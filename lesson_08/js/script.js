@@ -127,3 +127,20 @@ function func_8() {
 }
 
 console.log(func_8())
+
+// #09
+let out9 = ''
+
+function func_9(a, b) {
+    if (a >= b) {
+        return false
+    }
+    let p = a
+    while (p <= b) {
+        out9 += p % 2 === 0 ? `0 ` : `${p} `
+        p++
+    }
+    return out9
+}
+
+console.log(func_9(1, 9))
