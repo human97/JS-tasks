@@ -1,8 +1,7 @@
 // #01
-let p = 0
-let out1 = ''
-
 function func_1() {
+    let p = 0
+    let out1 = ''
 
     while (p <= 100) {
         out1 += `${p} `
@@ -13,10 +12,10 @@ function func_1() {
 
 console.log(func_1())
 
-// #02
-let out2 = ''
 
+// #02
 function func_2(num1, num2) {
+    let out2 = ''
     let p1 = num1
     while (p1 <= num2) {
         out2 += `${p1} `
@@ -27,10 +26,10 @@ function func_2(num1, num2) {
 
 console.log(func_2(5, 14))
 
-// #03
-let out3 = ''
 
+// #03
 function func_3(a, b) {
+    let out3 = ''
     let max = a > b ? a : b
     let min = a < b ? a : b
     let p = max
@@ -43,10 +42,10 @@ function func_3(a, b) {
 
 console.log(func_3(8, 19))
 
-// #04
-let out4 = ''
 
+// #04
 function func_4(a, b, c) {
+    let out4 = ''
     let max = a > b ? a : b
     let min = a < b ? a : b
     let p = max
@@ -59,10 +58,10 @@ function func_4(a, b, c) {
 
 console.log(func_4(8, 19, 2))
 
-// #05
-let sum5 = 0
 
+// #05
 function func_5() {
+    let sum5 = 0
     let p = 0
     while (p <= 20) {
         sum5 += p
@@ -73,10 +72,10 @@ function func_5() {
 
 console.log(func_5())
 
-// #06
-let out6 = 0
 
+// #06
 function func_6(a, b) {
+    let out6 = 0
     if (a > b) {
         return false
     } else if (b > a) {
@@ -93,10 +92,10 @@ function func_6(a, b) {
 
 console.log(func_6(15, 16))
 
-// #07
-let out7 = 0
 
+// #07
 function func_7(a, b) {
+    let out7 = 0
     if (a > b || a === 0) {
         return false
     } else if (b > a) {
@@ -114,10 +113,10 @@ function func_7(a, b) {
 
 console.log(func_7(10, 12))
 
-// #08
-let out8 = 333
 
+// #08
 function func_8() {
+    let out8 = 333
     let day = 0
     while (out8 <= 1000000) {
         day++
@@ -128,10 +127,10 @@ function func_8() {
 
 console.log(func_8())
 
-// #09
-let out9 = ''
 
+// #09
 function func_9(a, b) {
+    let out9 = ''
     if (a >= b) {
         return false
     }
@@ -145,16 +144,34 @@ function func_9(a, b) {
 
 console.log(func_9(1, 9))
 
-// #10
-let out10 = ''
 
+// #10
 function func_10() {
     let p = 1
+    let out10 = ''
     while (p <= 6) {
+        //out10 += p % 2 === 0 ? `*\n` : `**\n` //вариант для консоли
         out10 += p % 2 === 0 ? `*<br>` : `**<br>`
         p++
     }
     return out10
 }
 
+//console.log(func_10())
 document.querySelector('.div10').innerHTML = `<pre>${func_10()}</pre>`
+
+
+// #11
+function func_11() {
+    let p = 10
+    let k = 1
+    let out11 = ''
+    while (p > 0) {
+        out11 += `${p}&nbsp;${k}&nbsp;`
+        k++
+        p--
+    }
+    return out11
+}
+
+document.querySelector('.div11').innerHTML = func_11()
