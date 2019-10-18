@@ -175,3 +175,14 @@ function func_11() {
 }
 
 document.querySelector('.div11').innerHTML = func_11()
+
+// #12
+let a = 0
+do
+    console.log('do while work')
+while (a < 0)
+
+let b = 0
+while (b < 0) {
+    console.log('while work')
+}
