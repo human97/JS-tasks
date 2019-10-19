@@ -186,3 +186,18 @@ let b = 0
 while (b < 0) {
     console.log('while work')
 }
+
+
+// #13
+function func_13() {
+    let out13 = ''
+    let p = 100
+    do {
+        out13 += `${p} `
+        p--
+    }
+    while (p >= 0)
+    return out13
+}
+
+console.log(func_13())
