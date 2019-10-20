@@ -201,3 +201,20 @@ function func_13() {
 }
 
 console.log(func_13())
+
+
+// #14
+function func_14() {
+    let p = 5
+    let d = 1
+
+    do {
+        d++
+        p += p * .3
+    }
+    while (p <= 132)
+    return d
+}
+
+console.log(func_14())
+document.querySelector('.div14').textContent = func_14()
