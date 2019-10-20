@@ -207,7 +207,6 @@ console.log(func_13())
 function func_14() {
     let p = 5
     let d = 1
-
     do {
         d++
         p += p * .3
@@ -218,3 +217,21 @@ function func_14() {
 
 console.log(func_14())
 document.querySelector('.div14').textContent = func_14()
+
+
+// #15
+function func_15() {
+    let out15 = 0
+    let l = 1.1
+    let d = 1
+    do {
+        out15 += l
+        l += .3
+        d++
+    }
+    while (out15 <= 568)
+    return d
+}
+
+console.log(func_15())
+document.querySelector('.div15').textContent = func_15()
