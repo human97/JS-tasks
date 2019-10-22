@@ -251,18 +251,18 @@ function func_16() {
 }
 
 console.log(func_16())
-document.querySelector('.div16').textContent = func_16()
+document.querySelector('.div16').innerHTML = `Количество параграфов = ${func_16()}`
 
 
 // #17
 function func_17() {
     const p16 = document.querySelectorAll('p[class=task16]')
+    let k = 0
     do {
-        let i
-        for (i = 0; i <= p16.length; i++) {
-            p16[i].textContent = i + 1
-        }
-    } while (p16.length > 0)
+        p16[k].textContent = k + 1
+        k++
+    }
+    while (k < p16.length)
 }
 
 func_17()
