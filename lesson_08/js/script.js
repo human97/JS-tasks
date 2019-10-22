@@ -238,9 +238,9 @@ document.querySelector('.div15').textContent = func_15()
 
 
 // #16
-function func_16() {
-    let p16V = document.querySelectorAll('p[class=task16]').length
+let p16V = document.querySelectorAll('p[class=task16]').length // длинна массива p.task16
 
+function func_16() {
     do {
         if (p16V % 2 === 0) {
             return p16V
@@ -255,8 +255,9 @@ document.querySelector('.div16').innerHTML = `Количество парагр�
 
 
 // #17
+const p16 = document.querySelectorAll('p[class=task16]') //массив из p.task16
+
 function func_17() {
-    const p16 = document.querySelectorAll('p[class=task16]')
     let k = 0
     do {
         p16[k].textContent = k + 1
@@ -266,3 +267,16 @@ function func_17() {
 }
 
 func_17()
+
+
+// #18
+function func_18() {
+    let k = 0
+    do {
+        p16[k].textContent = p16V - k
+        k++
+    }
+    while (k < p16.length)
+}
+
+func_18()
