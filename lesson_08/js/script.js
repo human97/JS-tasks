@@ -303,3 +303,27 @@ function func_19() {
 }
 
 console.log(func_19())
+
+
+// #20
+const div20 = document.querySelector('.div20')
+
+function func_20() {
+    let out20 = ''
+    let i = 0
+    do {
+        let k = 0
+        i++
+        do {
+            k++
+            out20 += i === k ? `1 ` : `* `
+        }
+        while (k < 4)
+        out20 += `<br>`
+    }
+    while (i < 4)
+    return out20
+}
+
+console.log(func_20())
+div20.innerHTML = `<pre>${func_20()}</pre>`
