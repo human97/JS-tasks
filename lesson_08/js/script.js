@@ -283,3 +283,23 @@ function func_18() {
 }
 
 func_18()
+
+
+// #19
+function func_19() {
+    let out19 = ''
+    let p = 1
+    do {
+        out19 += p % 2 === 0 ? ` * ` : `${p}`
+        p++
+
+        // другой вариант
+        /*
+        out19 += `${p} * `
+        p += 2 
+        */
+    } while (p <= 20)
+    return out19
+}
+
+console.log(func_19())
