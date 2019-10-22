@@ -235,3 +235,20 @@ function func_15() {
 
 console.log(func_15())
 document.querySelector('.div15').textContent = func_15()
+
+
+// #16
+function func_16() {
+    let p16V = document.querySelectorAll('p[class=task16]').length
+   
+    do {
+        if (p16V % 2 === 0) {
+            return p16V
+        } else {
+            return false
+        }
+    } while (p16V > 0)
+}
+
+console.log(func_16())
+document.querySelector('.div16').textContent = func_16()
