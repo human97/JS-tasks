@@ -129,3 +129,5 @@ const result10 = document.querySelector('.result10')
 for (let i = 0; i < btn10.length; i++) {
     btn10[i].onclick = func_10
 }
+
+
