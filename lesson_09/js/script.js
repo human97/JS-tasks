@@ -49,3 +49,14 @@ let pU4 = document.querySelectorAll('.u-4')
 for (let i = 0; i < pU4.length; i++) {
     pU4[i].onclick = func_4
 }
+
+
+// #05
+function func_5(){
+    this.classList.remove('css-3')
+}
+
+let pU5 = document.querySelectorAll('.u-5')
+for (let i = 0; i < pU5.length; i++) {
+    pU5[i].onclick = func_5
+}
