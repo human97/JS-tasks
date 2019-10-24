@@ -52,7 +52,7 @@ for (let i = 0; i < pU4.length; i++) {
 
 
 // #05
-function func_5(){
+function func_5() {
     this.classList.remove('css-3')
 }
 
@@ -60,3 +60,12 @@ let pU5 = document.querySelectorAll('.u-5')
 for (let i = 0; i < pU5.length; i++) {
     pU5[i].onclick = func_5
 }
+
+
+// #06
+function func_6() {
+    this.classList.toggle('active')
+}
+
+const btn6 = document.querySelector('.btn6')
+btn6.onclick = func_6
