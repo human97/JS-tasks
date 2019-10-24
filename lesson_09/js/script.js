@@ -146,3 +146,17 @@ function func_11() {
 for (let i = 0; i < btn11.length; i++) {
     btn11[i].onclick = func_11
 }
+
+
+// #12
+const btn12 = document.querySelector('.btn12')
+const div12 = document.querySelector('.div12')
+
+function func_12() {
+    let divNew12 = document.createElement('div')
+    divNew12.textContent = 'New DIV'
+    divNew12.classList.add('css-4')
+    return divNew12
+}
+
+btn12.onclick = () => div12.append(func_12())
