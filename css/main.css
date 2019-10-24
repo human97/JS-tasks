@@ -2,6 +2,10 @@ body {
     background: #ffffff;
 }
 
+.result {
+    background: #cccccc;
+}
+
 /* styles for lesson#07 */
 .div07_10,
 .div07_15,
