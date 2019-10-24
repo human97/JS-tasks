@@ -101,3 +101,17 @@ function func_8() {
 
 const btn8 = document.querySelector('.btn8')
 btn8.onclick = func_8
+
+
+// #09
+function func_9() {
+    let data9 = this.getAttribute('data')
+    result9.textContent = data9
+}
+
+const btn9 = document.querySelectorAll('.btn9')
+const result9 = document.querySelector('.result9')
+
+for (let i = 0; i < btn9.length; i++) {
+    btn9[i].onclick = func_9
+}
