@@ -82,6 +82,7 @@ const btn7 = document.querySelector('.btn7')
 let p7 = document.createElement('p')
 p7.classList.add('p7', 'result')
 div7.insertBefore(p7, div7.firstChild)
+p7.textContent = 'X'
 
 btn7.onclick = function () {
     p7.textContent = func_7()
