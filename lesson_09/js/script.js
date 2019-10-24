@@ -115,3 +115,17 @@ const result9 = document.querySelector('.result9')
 for (let i = 0; i < btn9.length; i++) {
     btn9[i].onclick = func_9
 }
+
+
+// #10
+function func_10() {
+    let data10 = this.getAttribute('data-currency')
+    result10.textContent = data10
+}
+
+const btn10 = document.querySelectorAll('.btn10')
+const result10 = document.querySelector('.result10')
+
+for (let i = 0; i < btn10.length; i++) {
+    btn10[i].onclick = func_10
+}
