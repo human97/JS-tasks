@@ -38,3 +38,14 @@ let pU3 = document.querySelectorAll('.u-3')
 for (let i = 0; i < pU3.length; i++) {
     pU3[i].onclick = func_3
 }
+
+
+// #04
+function func_4() {
+    this.classList.add('css-2')
+}
+
+let pU4 = document.querySelectorAll('.u-4')
+for (let i = 0; i < pU4.length; i++) {
+    pU4[i].onclick = func_4
+}
