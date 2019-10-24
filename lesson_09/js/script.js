@@ -69,3 +69,20 @@ function func_6() {
 
 const btn6 = document.querySelector('.btn6')
 btn6.onclick = func_6
+
+
+// #07
+function func_7() {
+    let css3L = document.querySelectorAll('.css-3').length
+    return css3L
+}
+
+const div7 = document.querySelector('.div7')
+const btn7 = document.querySelector('.btn7')
+let p7 = document.createElement('p')
+p7.classList.add('p7', 'result')
+div7.insertBefore(p7, div7.firstChild)
+
+btn7.onclick = function () {
+    p7.textContent = func_7()
+}
