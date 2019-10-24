@@ -20,6 +20,10 @@ body {
 }
 
 /* styles for lesson#09 */
+.active {
+    border: #dd890a 3px solid;
+}
+
 .css-1 {
     background: #00ff37;
 }
