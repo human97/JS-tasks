@@ -87,3 +87,17 @@ p7.textContent = 'X'
 btn7.onclick = function () {
     p7.textContent = func_7()
 }
+
+
+// #08
+let pU1All = document.querySelectorAll('.u-1')
+console.log(pU1All)
+
+function func_8() {
+    for (let i = 0; i < pU1All.length; i++) {
+        pU1All[i].setAttribute('title', 'test-data')
+    }
+}
+
+const btn8 = document.querySelector('.btn8')
+btn8.onclick = func_8
