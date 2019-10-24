@@ -27,3 +27,14 @@ function func_2() {
 }
 
 btn2.onclick = func_2
+
+
+// #03
+function func_3() {
+    this.style.background = 'red'
+}
+
+let pU3 = document.querySelectorAll('.u-3')
+for (let i = 0; i < pU3.length; i++) {
+    pU3[i].onclick = func_3
+}
