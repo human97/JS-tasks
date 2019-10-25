@@ -215,3 +215,16 @@ function func_16() {
 }
 
 func_16()
+
+
+// #17
+const btn17 = document.querySelector('.btn17')
+const div17 = document.querySelector('.div17')
+
+function func_17() {
+    let p17 = document.createElement('p')
+    p17.prepend('p17')
+    div17.replaceWith(p17)
+}
+
+btn17.onclick = func_17
