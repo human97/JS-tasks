@@ -228,3 +228,16 @@ function func_17() {
 }
 
 btn17.onclick = func_17
+
+
+// #18
+let divs18 = document.querySelectorAll('.div18')
+
+function func_18() {
+    //this.classList.toggle('hide') // вариант через класс hide
+    this.remove()
+}
+
+for (let i = 0; i < divs18.length; i++) {
+    divs18[i].onclick = func_18
+}
