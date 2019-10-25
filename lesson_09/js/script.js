@@ -201,3 +201,17 @@ function func_15() {
 }
 
 btn15.onclick = func_15
+
+
+// #16
+const div16 = document.querySelector('.div16')
+
+function func_16() {
+    let btn16 = document.createElement('button')
+    btn16.classList.add('btn16')
+    btn16.append('Push')
+    btn16.onclick = () => console.log('Button#16')
+    div16.prepend(btn16)
+}
+
+func_16()
