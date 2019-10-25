@@ -168,7 +168,7 @@ const p13 = document.querySelector('.p13')
 function func_13() {
     let span13 = document.createElement('span')
     span13.classList.add('span-13')
-    span13.textContent = ' After-13 '
+    span13.append(' After-13 ')
     p13.append(span13)
 }
 
@@ -182,8 +182,22 @@ const p14 = document.querySelector('.p14')
 function func_14() {
     let span14 = document.createElement('span')
     span14.classList.add('span-14')
-    span14.textContent = ' Before-14 '
+    span14.prepend(' Before-14 ')
     p14.prepend(span14)
 }
 
 btn14.onclick = func_14
+
+
+// #15
+const btn15 = document.querySelector('.btn15')
+const p15 = document.querySelector('.p15')
+
+function func_15() {
+    let span15 = document.createElement('span')
+    span15.classList.add('span-15')
+    span15.prepend(' Before child-15 ')
+    p15.before(span15)
+}
+
+btn15.onclick = func_15
