@@ -173,3 +173,17 @@ function func_13() {
 }
 
 btn13.onclick = func_13
+
+
+// #14
+const btn14 = document.querySelector('.btn14')
+const p14 = document.querySelector('.p14')
+
+function func_14() {
+    let span14 = document.createElement('span')
+    span14.classList.add('span-14')
+    span14.textContent = ' Before-14 '
+    p14.prepend(span14)
+}
+
+btn14.onclick = func_14
