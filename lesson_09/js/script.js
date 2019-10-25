@@ -91,7 +91,6 @@ btn7.onclick = function () {
 
 // #08
 let pU1All = document.querySelectorAll('.u-1')
-console.log(pU1All)
 
 function func_8() {
     for (let i = 0; i < pU1All.length; i++) {
@@ -160,3 +159,17 @@ function func_12() {
 }
 
 btn12.onclick = () => div12.append(func_12())
+
+
+// #13
+const btn13 = document.querySelector('.btn13')
+const p13 = document.querySelector('.p13')
+
+function func_13() {
+    let span13 = document.createElement('span')
+    span13.classList.add('span-13')
+    span13.textContent = ' After-13 '
+    p13.append(span13)
+}
+
+btn13.onclick = func_13
