@@ -254,3 +254,30 @@ function func_19(text) {
 }
 
 btn19.onclick = () => func_19('new append')
+
+
+// #20
+const btn20 = document.querySelector('.btn20')
+const ul20 = document.querySelector('.ul-20')
+const inp20 = document.querySelector('.inp20')
+const check20 = document.querySelector('.check20')
+let inp20Val
+let checked20
+
+function func_20() {
+    inp20Val = inp20.value.trim()
+
+    if (inp20Val === '') {
+        alert('error')
+    } else {
+        checked20 = check20.checked
+        let li20 = document.createElement('li')
+        if (checked20) {
+            li20.classList.add('css-5')
+        }
+        li20.append(inp20Val)
+        ul20.append(li20)
+    }
+}
+
+btn20.onclick = func_20
