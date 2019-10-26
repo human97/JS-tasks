@@ -241,3 +241,16 @@ function func_18() {
 for (let i = 0; i < divs18.length; i++) {
     divs18[i].onclick = func_18
 }
+
+
+// #19
+const btn19 = document.querySelector('.btn19')
+const ul19 = document.querySelector('.ul-19')
+
+function func_19(text) {
+    let li19 = document.createElement('li')
+    li19.append(text)
+    ul19.append(li19)
+}
+
+btn19.onclick = () => func_19('new append')
