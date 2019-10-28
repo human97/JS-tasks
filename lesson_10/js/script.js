@@ -22,3 +22,9 @@ console.log(a[0], a[3], a[8]) // 8го элемента в массиве нет
 // #05
 const div5 = document.querySelector('.div5')
 div5.innerHTML = a[0] + a[2] + a[3]
+
+
+// #06
+const array6 = ['Human', 205, 01, 'January']
+const div6 = document.querySelector('.div6')
+div6.innerHTML = array6
