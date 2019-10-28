@@ -28,3 +28,10 @@ div5.innerHTML = a[0] + a[2] + a[3]
 const array6 = ['Human', 205, 01, 'January']
 const div6 = document.querySelector('.div6')
 div6.innerHTML = array6
+
+
+// #07
+let b = ['one', 1, 2, 'two']
+b.push('hi', 'foo', 'bar')
+const div7 = document.querySelector('.div7')
+div7.textContent = b
