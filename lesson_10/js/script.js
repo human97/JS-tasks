@@ -13,3 +13,7 @@ div2.innerHTML = array2
 const a = [2, 'hello', 17, 34, 'privet']
 const div3 = document.querySelector('.div3')
 div3.innerHTML = a.length
+
+
+// #04
+console.log(a[0], a[3], a[8]) // 8го элемента в массиве нет значение undefined
