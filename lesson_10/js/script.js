@@ -17,3 +17,8 @@ div3.innerHTML = a.length
 
 // #04
 console.log(a[0], a[3], a[8]) // 8го элемента в массиве нет значение undefined
+
+
+// #05
+const div5 = document.querySelector('.div5')
+div5.innerHTML = a[0] + a[2] + a[3]
