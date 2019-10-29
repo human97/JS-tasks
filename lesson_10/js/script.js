@@ -50,3 +50,10 @@ div8.innerHTML = `${b8}<br>b8.length = ${b8.length}`
 const array9 = [0, 1, 2, false, 'Hi', 99, true, '0001', 'cat', '100']
 console.log(array9[2], array9[6])
 console.log(array9)
+
+
+// #10
+let array10 = [1, , , , 5, , , , , 10]
+console.log(array10, a.length)
+const div10 = document.querySelector('.div10')
+div10.innerHTML = `${array10}<br>array10.length = ${array10.length}`
