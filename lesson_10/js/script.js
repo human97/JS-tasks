@@ -44,3 +44,9 @@ b8.splice(5, 0, 5)
 console.log(b8, b8.length)
 const div8 = document.querySelector('.div8')
 div8.innerHTML = `${b8}<br>b8.length = ${b8.length}`
+
+
+// #09
+const array9 = [0, 1, 2, false, 'Hi', 99, true, '0001', 'cat', '100']
+console.log(array9[2], array9[6])
+console.log(array9)
