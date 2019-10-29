@@ -54,6 +54,6 @@ console.log(array9)
 
 // #10
 let array10 = [1, , , , 5, , , , , 10]
-console.log(array10, a.length)
+console.log(array10, array10.length)
 const div10 = document.querySelector('.div10')
 div10.innerHTML = `${array10}<br>array10.length = ${array10.length}`
