@@ -35,3 +35,12 @@ let b = ['one', 1, 2, 'two']
 b.push('hi', 'foo', 'bar')
 const div7 = document.querySelector('.div7')
 div7.textContent = b
+
+
+// #08
+let b8 = ['one', 1, 2, 'two']
+b8.splice(2, 0, 3.14, 17)
+b8.splice(5, 0, 5)
+console.log(b8, b8.length)
+const div8 = document.querySelector('.div8')
+div8.innerHTML = `${b8}<br>b8.length = ${b8.length}`
