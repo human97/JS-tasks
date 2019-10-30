@@ -106,3 +106,15 @@ for (let i = e.length - 1; i >= 0; i--) {
     out14 += `${e[i]}&nbsp;`
 }
 div14.innerHTML = out14
+
+
+// #15
+const d15 = [0, 2, 5, -4, 6, 22, -9, -12, 8, 12, 13, 78]
+const div15 = document.querySelector('.div15')
+let out15 = ''
+for (let i = 0; i < d15.length; i++) {
+    if (d15[i] > 0) {
+        out15 += `${d15[i]}&nbsp;`
+    }
+}
+div15.innerHTML = out15
