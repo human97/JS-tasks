@@ -96,3 +96,13 @@ for (let i = 0; i < d.length; i++) {
     out13 += `${d[i]}&nbsp;`
 }
 div13.innerHTML = out13
+
+
+// #14
+const e = [1, 2, 3, 'hello', 66]
+const div14 = document.querySelector('.div14')
+let out14 = ''
+for (let i = e.length - 1; i >= 0; i--) {
+    out14 += `${e[i]}&nbsp;`
+}
+div14.innerHTML = out14
