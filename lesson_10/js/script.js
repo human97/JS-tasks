@@ -86,3 +86,13 @@ function func_12(array) {
 }
 
 func_12([0, true, '99', 56, null, 100])
+
+
+// #13
+const d = ['y', 4, 22, 'o']
+const div13 = document.querySelector('.div13')
+let out13 = ''
+for (let i = 0; i < d.length; i++) {
+    out13 += `${d[i]}&nbsp;`
+}
+div13.innerHTML = out13
