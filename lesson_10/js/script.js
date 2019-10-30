@@ -57,3 +57,20 @@ let array10 = [1, , , , 5, , , , , 10]
 console.log(array10, array10.length)
 const div10 = document.querySelector('.div10')
 div10.innerHTML = `${array10}<br>array10.length = ${array10.length}`
+
+
+// #11
+const btn11 = document.querySelector('.btn11')
+const div11 = document.querySelector('.div11')
+const c = [77, 88, 99, 66]
+/*
+c.splice(0, 1, c[2])
+c.splice(2, 1, c[0])
+btn11.onclick = () => div11.textContent = c
+*/
+btn11.onclick = () => {
+    let c1 = c[0]
+    c[0] = c[2]
+    c[2] = c1
+    div11.textContent = c
+}
