@@ -74,3 +74,15 @@ btn11.onclick = () => {
     c[2] = c1
     div11.textContent = c
 }
+
+
+// #12
+function func_12(array) {
+    let e12 = array.length - 1 //индекс последнего элемента массива
+    let e0 = array[0] // первый элемент массива
+    array[0] = array[e12]
+    array[e12] = e0
+    console.log(array)
+}
+
+func_12([0, true, '99', 56, null, 100])
