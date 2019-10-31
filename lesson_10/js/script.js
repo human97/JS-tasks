@@ -132,6 +132,7 @@ for (let i = 0; i < d15.length; i++) {
         d15Odd.push(d15[i])
     }
 }
+
 div16.innerHTML = `<p>Event numbers: ${d15Event}</p><br><p>Odd numbers: ${d15Odd}</p>`
 
 
