@@ -17,3 +17,6 @@ btn2.onclick = function () {
     arr1.pop()
     div1.textContent = arr1
 }
+
+
+// #03
