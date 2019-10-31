@@ -155,7 +155,20 @@ const div18 = document.querySelector('.div18')
 
 let max = e17[0]
 for (let i = 1; i < e17.length; i++) {
-    console.log(max)
     e17[i] > max ? max = e17[i] : max
 }
 div18.textContent = max
+
+
+// #19
+let f = [-3, 0, 45, 22, 123, -485, 98, 34]
+const div19 = document.querySelector('.div19')
+let max18 = f[0]
+let index18 = 0
+for (let i = 0; i < f.length; i++) {
+    if (f[i] > max18) {
+        index18 = i
+        max18 = f[i]
+    }
+}
+div19.textContent = index18
