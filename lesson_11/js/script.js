@@ -20,3 +20,9 @@ btn2.onclick = function () {
 
 
 // #03
+const btn3 = document.querySelector('.btn3')
+btn3.onclick = function () {
+    inp1Val = inp1.value
+    arr1.shift(inp1Val)
+    div1.textContent = arr1
+}
