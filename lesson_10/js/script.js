@@ -95,6 +95,7 @@ let out13 = ''
 for (let i = 0; i < d.length; i++) {
     out13 += `${d[i]}&nbsp;`
 }
+
 div13.innerHTML = out13
 
 
@@ -105,6 +106,7 @@ let out14 = ''
 for (let i = e.length - 1; i >= 0; i--) {
     out14 += `${e[i]}&nbsp;`
 }
+
 div14.innerHTML = out14
 
 
@@ -117,6 +119,7 @@ for (let i = 0; i < d15.length; i++) {
         out15 += `${d15[i]}&nbsp;`
     }
 }
+
 div15.innerHTML = out15
 
 
@@ -147,6 +150,7 @@ for (let i = 0; i < e17.length; i++) {
     // вариант с тернарным выражением
     //e17[i] === 0 ? count17++ : count17
 }
+
 div17.textContent = count17
 
 
@@ -157,6 +161,7 @@ let max = e17[0]
 for (let i = 1; i < e17.length; i++) {
     e17[i] > max ? max = e17[i] : max
 }
+
 div18.textContent = max
 
 
@@ -171,4 +176,15 @@ for (let i = 0; i < f.length; i++) {
         max18 = f[i]
     }
 }
+
 div19.textContent = index18
+
+
+// #20
+const div20 = document.querySelector('.div20')
+let out20 = 0
+for (let i = 0; i < f.length; i++) {
+    out20 += f[i]
+}
+
+div20.textContent = out20
