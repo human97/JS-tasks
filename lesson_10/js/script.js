@@ -140,9 +140,10 @@ const div17 = document.querySelector('.div17')
 let e17 = [3, 0, 2, 6, 0, 1, 3, 1, 9, 0, 2, 0]
 let count17 = 0
 for (let i = 0; i < e17.length; i++) {
-    /*if (e17[i] === 0) {
+    if (e17[i] === 0) {
         count17++
-    }*/
-    e17[i] === 0 ? count17++ : count17
+    }
+    // вариант с тернарным выражением
+    //e17[i] === 0 ? count17++ : count17
 }
 div17.textContent = count17
