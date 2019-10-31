@@ -9,3 +9,11 @@ btn1.onclick = function () {
     arr1.push(inp1Val)
     div1.textContent = arr1
 }
+
+
+// #02
+const btn2 = document.querySelector('.btn2')
+btn2.onclick = function () {
+    arr1.pop()
+    div1.textContent = arr1
+}
