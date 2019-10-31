@@ -148,3 +148,14 @@ for (let i = 0; i < e17.length; i++) {
     //e17[i] === 0 ? count17++ : count17
 }
 div17.textContent = count17
+
+
+// #18
+const div18 = document.querySelector('.div18')
+
+let max = e17[0]
+for (let i = 1; i < e17.length; i++) {
+    console.log(max)
+    e17[i] > max ? max = e17[i] : max
+}
+div18.textContent = max
