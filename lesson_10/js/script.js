@@ -118,3 +118,18 @@ for (let i = 0; i < d15.length; i++) {
     }
 }
 div15.innerHTML = out15
+
+
+// #16
+const div16 = document.querySelector('.div16')
+let d15Event = []
+let d15Odd = []
+console.log(d15Event)
+for (let i = 0; i < d15.length; i++) {
+    if (d15[i] % 2 === 0) {
+        d15Event.push(d15[i])
+    } else {
+        d15Odd.push(d15[i])
+    }
+}
+div16.innerHTML = `<p>Event numbers: ${d15Event}</p><br><p>Odd numbers: ${d15Odd}</p>`
