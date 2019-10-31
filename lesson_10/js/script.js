@@ -133,3 +133,16 @@ for (let i = 0; i < d15.length; i++) {
     }
 }
 div16.innerHTML = `<p>Event numbers: ${d15Event}</p><br><p>Odd numbers: ${d15Odd}</p>`
+
+
+// #17
+const div17 = document.querySelector('.div17')
+let e17 = [3, 0, 2, 6, 0, 1, 3, 1, 9, 0, 2, 0]
+let count17 = 0
+for (let i = 0; i < e17.length; i++) {
+    /*if (e17[i] === 0) {
+        count17++
+    }*/
+    e17[i] === 0 ? count17++ : count17
+}
+div17.textContent = count17
