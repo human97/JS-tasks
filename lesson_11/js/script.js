@@ -1,19 +1,27 @@
 // #01
+
+
 let arr1 = []
 const inp1 = document.querySelector('.inp1')
 const btn1 = document.querySelector('.btn1')
 const div1 = document.querySelector('.div1')
 let inp1Val
-btn1.onclick = function () {
+btn1.onclick = () => {
     inp1Val = inp1.value
-    arr1.push(inp1Val)
-    div1.textContent = arr1
+    if (inp1Val.trim() === '') {
+        alert('Input data')
+        inp1.value = ''
+    } else {
+        arr1.push(inp1Val.trim())
+        div1.textContent = arr1
+        inp1.value = ''
+    }
 }
 
 
 // #02
 const btn2 = document.querySelector('.btn2')
-btn2.onclick = function () {
+btn2.onclick = () => {
     arr1.pop()
     div1.textContent = arr1
 }
@@ -21,8 +29,8 @@ btn2.onclick = function () {
 
 // #03
 const btn3 = document.querySelector('.btn3')
-btn3.onclick = function () {
-    inp1Val = inp1.value
-    arr1.shift(inp1Val)
+btn3.onclick = () => {
+    arr1.shift()
     div1.textContent = arr1
+    inp1.value = ''
 }
