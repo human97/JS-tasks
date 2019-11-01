@@ -34,3 +34,18 @@ btn3.onclick = () => {
     div1.textContent = arr1
     inp1.value = ''
 }
+
+
+// #04
+const btn4 = document.querySelector('.btn4')
+btn4.onclick = () => {
+    inp1Val = inp1.value
+    if (inp1Val.trim() === '') {
+        alert('Input data')
+        inp1.value = ''
+    } else {
+        arr1.unshift(inp1Val.trim())
+        div1.textContent = arr1
+        inp1.value = ''
+    }
+}
