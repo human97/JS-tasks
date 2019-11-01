@@ -49,3 +49,46 @@ btn4.onclick = () => {
         inp1.value = ''
     }
 }
+
+
+// #05
+let arr5 = [3, 14, 15, 92, 6, 54, 123, 87, 66, 43, 12, 90, 'hello']
+
+const inp5_1 = document.querySelector('.inp5-1')
+const inp5_2 = document.querySelector('.inp5-2')
+const btn5 = document.querySelector('.btn5')
+const div5 = document.querySelector('.div5')
+let inp5_1Val
+let inp5_2Val
+let arr5L // длинна массива - 1
+
+btn5.onclick = () => {
+    inp5_1Val = inp5_1.value
+    inp5_2Val = inp5_2.value
+    arr5L = arr5.length - 1
+    if (inp5_1Val.trim() === '' || inp5_2Val.trim() === '') {
+        alert('error')
+    } else if (inp5_1Val.trim() < 0 || inp5_1Val.trim() > arr5L || inp5_2Val.trim() <= 0) {
+        alert('error')
+    } else {
+        arr5.splice(inp5_1Val, inp5_2Val)
+        div5.textContent = arr5
+    }
+}
+
+function inputClear() {
+    this.value = ''
+}
+
+inp5_1.onclick = inputClear
+inp5_2.onclick = inputClear
+
+// упрощенный вариант без валидации
+/*
+btn5.onclick = () => {
+    inp5_1Val = inp5_1.value
+    inp5_2Val = inp5_2.value
+    arr5.splice(inp5_1Val, inp5_2Val)
+    div5.textContent = arr5
+}
+*/
