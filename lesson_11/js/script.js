@@ -113,3 +113,20 @@ const funcPush = () => {
 }
 
 btn6.onclick = funcPush
+
+
+// #07
+const btn7 = document.querySelector('.btn7')
+const div7 = document.querySelector('.div7')
+let arr7 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+const funcPop = () => {
+    if (arr7.length > 0) {
+        arr7.length -= 1
+        div7.textContent = arr7
+    } else {
+        alert('error')
+    }
+}
+
+btn7.onclick = funcPop
