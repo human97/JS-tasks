@@ -107,9 +107,13 @@ let arr6 = []
 
 const funcPush = () => {
     inp6Val = inp6.value
-    arr6L = arr6.length
-    arr6[arr6L] = inp6Val.trim()
-    div6.textContent = arr6
+    if (inp6Val.trim() !== '') {
+        arr6L = arr6.length
+        arr6[arr6L] = inp6Val.trim()
+        div6.textContent = arr6
+    } else {
+        alert('error')
+    }
 }
 
 btn6.onclick = funcPush
@@ -130,6 +134,3 @@ const funcPop = () => {
 }
 
 btn7.onclick = funcPop
-
-
-// #08
