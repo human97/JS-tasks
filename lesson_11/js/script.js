@@ -105,9 +105,11 @@ const div6 = document.querySelector('.div6')
 let inp6Val
 let arr6 = []
 
-btn6.onclick = funcPush = () => {
+const funcPush = () => {
     inp6Val = inp6.value
     arr6L = arr6.length
     arr6[arr6L] = inp6Val.trim()
     div6.textContent = arr6
 }
+
+btn6.onclick = funcPush
