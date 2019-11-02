@@ -130,3 +130,6 @@ const funcPop = () => {
 }
 
 btn7.onclick = funcPop
+
+
+// #08
