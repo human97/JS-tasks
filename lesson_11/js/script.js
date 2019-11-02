@@ -1,6 +1,16 @@
+// функция очищения input
+function inputClear() {
+    this.value = ''
+}
+
+let inputAll = document.querySelectorAll('input') // получил все input
+// цикл на все input при событии onclick вешает функцию 
+for (let i = 0; i < inputAll.length; i++) {
+    inputAll[i].onclick = inputClear
+}
+//*********
+
 // #01
-
-
 let arr1 = []
 const inp1 = document.querySelector('.inp1')
 const btn1 = document.querySelector('.btn1')
@@ -76,13 +86,6 @@ btn5.onclick = () => {
     }
 }
 
-function inputClear() {
-    this.value = ''
-}
-
-inp5_1.onclick = inputClear
-inp5_2.onclick = inputClear
-
 // упрощенный вариант без валидации
 /*
 btn5.onclick = () => {
@@ -92,3 +95,19 @@ btn5.onclick = () => {
     div5.textContent = arr5
 }
 */
+
+
+// #06
+const btn6 = document.querySelector('.btn6')
+const inp6 = document.querySelector('.inp6')
+const div6 = document.querySelector('.div6')
+
+let inp6Val
+let arr6 = []
+
+btn6.onclick = funcPush = () => {
+    inp6Val = inp6.value
+    arr6L = arr6.length
+    arr6[arr6L] = inp6Val.trim()
+    div6.textContent = arr6
+}
