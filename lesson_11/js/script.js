@@ -134,3 +134,25 @@ const funcPop = () => {
 }
 
 btn7.onclick = funcPop
+
+
+// #08
+let arr8 = [0, 100, 2, 3, 4, 5, 6, 7, 8, 9, 1000]
+const btn8 = document.querySelector('.btn8')
+const div8 = document.querySelector('.div8')
+
+const funcSift = () => {
+    if (arr8.length > 0) {
+        let newArr8 = []
+        for (let i = 1; i < arr8.length; i++) {
+            newArr8[i - 1] = arr8[i]
+            console.log(newArr8)
+        }
+        arr8 = newArr8
+        div8.innerHTML = arr8
+    } else {
+        alert('error')
+    }
+}
+
+btn8.onclick = funcSift
