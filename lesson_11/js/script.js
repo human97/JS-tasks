@@ -189,3 +189,17 @@ const btn10 = document.querySelector('.btn10')
 btn10.onclick = () => {
     div10.textContent = arr10.reverse()
 }
+
+
+// #11
+let arr11 = [0, 2, 3, 7, 8, 5, 11]
+const inp11 = document.querySelector('.inp11')
+const div11 = document.querySelector('.div11')
+const btn11 = document.querySelector('.btn11')
+let inp11Val
+
+btn11.onclick = () => {
+    inp11Val = +inp11.value.trim()
+    let ind11 = arr11.indexOf(inp11Val)
+    div11.textContent = ind11
+}
