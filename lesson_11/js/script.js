@@ -142,8 +142,8 @@ const btn8 = document.querySelector('.btn8')
 const div8 = document.querySelector('.div8')
 
 const funcSift = () => {
+    let newArr8 = []
     if (arr8.length > 0) {
-        let newArr8 = []
         for (let i = 1; i < arr8.length; i++) {
             newArr8[i - 1] = arr8[i]
             console.log(newArr8)
@@ -156,3 +156,26 @@ const funcSift = () => {
 }
 
 btn8.onclick = funcSift
+
+
+// #09
+let arr9 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 1000]
+const inp9 = document.querySelector('.inp9')
+const div9 = document.querySelector('.div9')
+const btn9 = document.querySelector('.btn9')
+let inp9Val
+let newArr9
+
+const funcUnShift = () => {
+    inp9Val = inp9.value
+    newArr9 = [inp9Val]
+
+    for (let i = 0; i < arr9.length; i++) {
+        newArr9[i + 1] = arr9[i]
+    }
+
+    arr9 = newArr9
+    div9.textContent = arr9
+}
+
+btn9.onclick = funcUnShift
