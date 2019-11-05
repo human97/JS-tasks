@@ -179,3 +179,13 @@ const funcUnShift = () => {
 }
 
 btn9.onclick = funcUnShift
+
+
+// #10
+let arr10 = [2, 4, 6, 8, 10, 'hello']
+const div10 = document.querySelector('.div10')
+const btn10 = document.querySelector('.btn10')
+
+btn10.onclick = () => {
+    div10.textContent = arr10.reverse()
+}
