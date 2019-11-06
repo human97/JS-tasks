@@ -203,3 +203,26 @@ btn11.onclick = () => {
     let ind11 = arr11.indexOf(inp11Val)
     div11.textContent = ind11
 }
+
+
+// #12
+let arr12 = [0, 2, 3, 7, 8, 5, 11]
+const inp12 = document.querySelector('.inp12')
+const div12 = document.querySelector('.div12')
+const btn12 = document.querySelector('.btn12')
+let inp12Val
+
+const funcIndexOf = () => {
+    inp12Val = inp12.value
+    for (let i = 0; i < arr12.length; i++) {
+        if (arr12[i] === +inp12Val) {
+
+            div12.textContent = i
+            break
+        } else {
+            div12.textContent = -1
+        }
+    }
+}
+
+btn12.onclick = funcIndexOf
