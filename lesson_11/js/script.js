@@ -256,7 +256,6 @@ const btn14 = document.querySelector('.btn14')
 let inp14Val
 
 function newArr14() {
-    //arr14L = +inp14.value
     let arr14 = []
     arr14.length = +inp14.value
     for (let i = 0; i < arr14.length; i++) {
