@@ -213,16 +213,31 @@ const btn12 = document.querySelector('.btn12')
 let inp12Val
 
 const funcIndexOf = () => {
-    inp12Val = inp12.value
-    for (let i = 0; i < arr12.length; i++) {
-        if (arr12[i] === +inp12Val) {
-
+    inp12Val = +inp12.value
+    for (let i = 0; i < arr12.length; i++)
+        if (arr12[i] === inp12Val) {
             div12.textContent = i
             break
         } else {
             div12.textContent = -1
         }
-    }
 }
 
 btn12.onclick = funcIndexOf
+
+
+// #13
+let arr13 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+const div13 = document.querySelector('.div13')
+const btn13 = document.querySelector('.btn13')
+
+const funcReverse = () => {
+    let arr13L = arr13.length - 1
+    let newArr13 = []
+    for (let i = 0; i < arr13.length; i++) {
+        newArr13[arr13L - i] = arr13[i]
+    }
+    div13.textContent = newArr13
+}
+
+btn13.onclick = funcReverse
