@@ -241,3 +241,28 @@ const funcReverse = () => {
 }
 
 btn13.onclick = funcReverse
+
+
+// #14
+function getRandomIntInclusive(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min; //Максимум и минимум включаются
+}
+
+const inp14 = document.querySelector('.inp14')
+const div14 = document.querySelector('.div14')
+const btn14 = document.querySelector('.btn14')
+let inp14Val
+
+function newArr14() {
+    //arr14L = +inp14.value
+    let arr14 = []
+    arr14.length = +inp14.value
+    for (let i = 0; i < arr14.length; i++) {
+        arr14[i] = getRandomIntInclusive(0, 100)
+    }
+    return div14.textContent = arr14
+}
+
+btn14.onclick = newArr14
