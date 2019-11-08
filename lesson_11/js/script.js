@@ -279,3 +279,14 @@ btn15.onclick = () => {
     }
     div15.textContent = newArr15
 }
+
+
+// #16
+let arr16_1 = [3, 5, 7]
+let arr16_2 = [2, 4, 6]
+const div16 = document.querySelector('.div16')
+const btn16 = document.querySelector('.btn16')
+
+btn16.onclick = () => {
+    div16.textContent = arr16_1.concat(arr16_2)
+}
