@@ -265,3 +265,17 @@ function newArr14() {
 }
 
 btn14.onclick = newArr14
+
+
+// #15
+let arr15 = [1, 2, 3, 4, 5, 6, 7, 88, 77]
+const div15 = document.querySelector('.div15')
+const btn15 = document.querySelector('.btn15')
+
+btn15.onclick = () => {
+    let newArr15 = []
+    for (let i = 0; i < arr15.length; i++) {
+        arr15[i] % 2 === 0 ? newArr15.push(arr15[i]) : 0
+    }
+    div15.textContent = newArr15
+}
