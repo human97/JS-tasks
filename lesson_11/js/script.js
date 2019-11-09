@@ -335,3 +335,21 @@ const funcIncludes = () => {
 }
 
 btn19.onclick = funcIncludes
+
+
+// #20
+let arr20 = [1, 2, 3, 4, 5, 6, 7, 8]
+const div20 = document.querySelector('.div20')
+const btn20 = document.querySelector('.btn20')
+
+btn20.onclick = () => {
+    if (div20.textContent === arr20.join()) {
+        return false
+    } else {
+        div20.textContent = arr20.join()
+        console.log(arr20)
+        console.log(typeof (arr20))
+        console.log(arr20.join())
+        console.log(typeof (arr20.join()))
+    }
+}
