@@ -304,3 +304,12 @@ btn17.onclick = () => {
     }
     div17.textContent = arr17_1
 }
+
+
+// #18
+let arr18 = [3, 5, 7, 11, 12, 13, 14]
+const inp18 = document.querySelector('.inp18')
+const div18 = document.querySelector('.div18')
+const btn18 = document.querySelector('.btn18')
+
+btn18.onclick = () => div18.textContent = arr18.includes(+inp18.value)
