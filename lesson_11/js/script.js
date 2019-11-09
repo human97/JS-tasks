@@ -290,3 +290,17 @@ const btn16 = document.querySelector('.btn16')
 btn16.onclick = () => {
     div16.textContent = arr16_1.concat(arr16_2)
 }
+
+
+// #17
+let arr17_1 = [33, 55, 77]
+let arr17_2 = [2, 4, 6]
+const div17 = document.querySelector('.div17')
+const btn17 = document.querySelector('.btn17')
+
+btn17.onclick = () => {
+    for (let i = 0; i < arr17_2.length; i++) {
+        arr17_1 += `,${arr17_2[i]}`
+    }
+    div17.textContent = arr17_1
+}
