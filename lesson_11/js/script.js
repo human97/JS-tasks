@@ -313,3 +313,25 @@ const div18 = document.querySelector('.div18')
 const btn18 = document.querySelector('.btn18')
 
 btn18.onclick = () => div18.textContent = arr18.includes(+inp18.value)
+
+
+// #19
+let arr19 = [3, 5, 7, 11, 12, 13, 14]
+const inp19 = document.querySelector('.inp19')
+const div19 = document.querySelector('.div19')
+const btn19 = document.querySelector('.btn19')
+let inp19V
+
+const funcIncludes = () => {
+    inp19V = +inp19.value
+    for (let i = 0; i < arr19.length; i++) {
+        if (inp19V === arr19[i]) {
+            div19.textContent = 'true'
+            break
+        } else {
+            div19.textContent = 'false'
+        }
+    }
+}
+
+btn19.onclick = funcIncludes
