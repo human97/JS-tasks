@@ -30,3 +30,9 @@ btn2.onclick = () => div2.innerHTML = a[0][2]
 const btn3 = document.querySelector('.btn3')
 const div3 = document.querySelector('.div3')
 btn3.onclick = () => div3.innerHTML = a[3][1]
+
+
+// #04
+const btn4 = document.querySelector('.btn4')
+const div4 = document.querySelector('.div4')
+btn4.onclick = () => div4.innerHTML = a[2]
