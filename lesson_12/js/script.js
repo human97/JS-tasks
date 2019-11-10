@@ -49,3 +49,17 @@ btn5.onclick = () => {
     }
     div5.innerHTML = out5
 }
+
+
+// #06
+const btn6 = document.querySelector('.btn6')
+const div6 = document.querySelector('.div6')
+let out6 = ''
+
+for (let i = 0; i < a.length; i++) {
+    if (i % 2 === 0) {
+        out6 += `${a[i]}<br>`
+    }
+}
+
+btn6.onclick = () => div6.innerHTML = out6
