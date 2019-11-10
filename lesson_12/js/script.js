@@ -36,3 +36,16 @@ btn3.onclick = () => div3.innerHTML = a[3][1]
 const btn4 = document.querySelector('.btn4')
 const div4 = document.querySelector('.div4')
 btn4.onclick = () => div4.innerHTML = a[2]
+
+
+// #05
+const btn5 = document.querySelector('.btn5')
+const div5 = document.querySelector('.div5')
+let out5 = ''
+
+btn5.onclick = () => {
+    for (let i = 0; i < a.length; i++) {
+        out5 += `${a[i][0]}&nbsp;`
+    }
+    div5.innerHTML = out5
+}
