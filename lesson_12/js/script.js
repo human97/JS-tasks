@@ -63,3 +63,20 @@ for (let i = 0; i < a.length; i++) {
 }
 
 btn6.onclick = () => div6.innerHTML = out6
+
+
+// #07
+const btn7 = document.querySelector('.btn7')
+const div7 = document.querySelector('.div7')
+let out7 = ''
+
+for (let i = 0; i < a.length; i++) {
+    for (let k = 0; k < a[i].length; k++) {
+        let num = a[i][k]
+        if (typeof (num) === 'number') {
+            out7 += `${num}&nbsp;`
+        }
+    }
+}
+
+btn7.onclick = () => div7.innerHTML = out7
