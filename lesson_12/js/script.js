@@ -1,7 +1,7 @@
 // #01
-const btn01 = document.querySelector('.btn01')
-const div01 = document.querySelector('.div01')
-let out01 = ''
+const btn1 = document.querySelector('.btn1')
+const div1 = document.querySelector('.div1')
+let out1 = ''
 const a = [
     [1, 2, 3],
     ['a', 'b', 'c'],
@@ -12,9 +12,9 @@ const a = [
 
 for (let i = 0; i < a.length; i++) {
     for (let k = 0; k < a[i].length; k++) {
-        out01 += `${a[i][k]}&nbsp;`
+        out1 += `${a[i][k]}&nbsp;`
     }
-    out01 += `<br>`
+    out1 += `<br>`
 }
 
-btn01.onclick = () => div01.innerHTML = out01
+btn1.onclick = () => div1.innerHTML = out1
