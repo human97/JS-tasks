@@ -80,3 +80,15 @@ for (let i = 0; i < a.length; i++) {
 }
 
 btn7.onclick = () => div7.innerHTML = out7
+
+
+// 08
+const btn8 = document.querySelector('.btn8')
+const div8 = document.querySelector('.div8')
+let out8 = ''
+
+for (let i = 0; i < a.length; i++) {
+    out8 += `Length array ${i} = ${a[i].length}<br>`
+}
+
+btn8.onclick = () => div8.innerHTML = out8
