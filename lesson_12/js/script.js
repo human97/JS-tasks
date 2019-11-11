@@ -141,6 +141,5 @@ for (let i = 0; i < 8; i++) {
     }
     out11 += `<br>`
 }
-console.log(chessBoard11)
 
 btn11.onclick = () => div11.innerHTML = `<pre>${out11}</pre>`
