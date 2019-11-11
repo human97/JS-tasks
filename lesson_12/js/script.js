@@ -92,3 +92,17 @@ for (let i = 0; i < a.length; i++) {
 }
 
 btn8.onclick = () => div8.innerHTML = out8
+
+
+// #09
+const btn9 = document.querySelector('.btn9')
+const div9 = document.querySelector('.div9')
+let out9 = ''
+
+for (let i = a.length - 1; i >= 0; i--) {
+    for (let k = a[i].length - 1; k >= 0; k--) {
+        out9 += `${a[i][k]}&nbsp;`
+    }
+}
+
+btn9.onclick = () => div9.innerHTML = out9
