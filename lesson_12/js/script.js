@@ -121,3 +121,26 @@ for (let i = 0; i < a.length; i++) {
 }
 
 btn10.onclick = () => div10.innerHTML = `<pre>${out10}</pre>`
+
+
+// #11
+const btn11 = document.querySelector('.btn11')
+const div11 = document.querySelector('.div11')
+let out11 = ''
+let chessBoard11 = []
+
+for (let i = 0; i < 8; i++) {
+    chessBoard11[i] = []
+    for (let k = 0; k < 8; k++) {
+        if ((i % 2 === 0 && k % 2 === 0) || (i % 2 !== 0 && k % 2 !== 0)) {
+            chessBoard11[i][k] = 0
+        } else {
+            chessBoard11[i][k] = 1
+        }
+        out11 += `${chessBoard11[i][k]}&nbsp;`
+    }
+    out11 += `<br>`
+}
+console.log(chessBoard11)
+
+btn11.onclick = () => div11.innerHTML = `<pre>${out11}</pre>`
