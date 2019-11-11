@@ -106,3 +106,18 @@ for (let i = a.length - 1; i >= 0; i--) {
 }
 
 btn9.onclick = () => div9.innerHTML = out9
+
+
+// #10
+const btn10 = document.querySelector('.btn10')
+const div10 = document.querySelector('.div10')
+let out10 = ''
+
+for (let i = 0; i < a.length; i++) {
+    for (let k = a[i].length - 1; k >= 0; k--) {
+        out10 += `${a[i][k]}&nbsp;`
+    }
+    out10 += `<br>`
+}
+
+btn10.onclick = () => div10.innerHTML = `<pre>${out10}</pre>`
