@@ -37,6 +37,7 @@ button:hover {
     background: #cccccc;
     border: #000000 1px solid;
     border-radius: 5px;
+    display: inline-block;
     margin: 10px;
     padding: 5px;
 }
@@ -85,4 +86,27 @@ button:hover {
 
 .span-14 {
     background: #0dc7be;
+}
+
+/* styles for lesson#12 */
+.chess_board12 {
+    border: #ff0000 2px solid;
+    display: inline-block;
+}
+
+.chess_board12--line {
+    display: flex;
+}
+
+.chess_board12--line-cell {
+    width: 30px;
+    height: 30px;
+}
+
+.chess_board12--line-cell_white {
+    background: #ffffff;
+}
+
+.chess_board12--line-cell_black {
+    background: #000000;
 }

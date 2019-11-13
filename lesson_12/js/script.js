@@ -143,3 +143,41 @@ for (let i = 0; i < 8; i++) {
 }
 
 btn11.onclick = () => div11.innerHTML = `<pre>${out11}</pre>`
+
+
+// #12
+const btn12 = document.querySelector('.btn12')
+const div12 = document.querySelector('.div12')
+let chessBoard12 = []
+
+btn12.onclick = () => {
+    if (div12.innerHTML === '') {
+        let chessBoard12 = document.createElement('div')
+        chessBoard12.classList.add('chess_board12')
+        div12.append(chessBoard12)
+
+        for (let i = 0; i < 8; i++) {
+            chessBoard12[i] = []
+            let divLine12 = document.createElement('div')
+            divLine12.classList.add('chess_board12--line')
+            chessBoard12.append(divLine12)
+
+            for (let k = 0; k < 8; k++) {
+
+                if ((i % 2 === 0 && k % 2 === 0) || (i % 2 !== 0 && k % 2 !== 0)) {
+                    let divCell12White = document.createElement('div')
+                    divCell12White.classList.add('chess_board12--line-cell_white', 'chess_board12--line-cell')
+                    divLine12.append(divCell12White)
+
+                } else {
+                    let divCell12Black = document.createElement('div')
+                    divCell12Black.classList.add('chess_board12--line-cell_black', 'chess_board12--line-cell')
+                    divLine12.append(divCell12Black)
+                }
+
+            }
+        }
+    } else {
+        false
+    }
+}
