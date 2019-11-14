@@ -193,3 +193,16 @@ const arr13 = [
 btn13.onclick = () => {
     div13.innerHTML = `arr13[0] = ${arr13[0]}<br>arr13[0][1] == ${arr13[0][1]}<hr>arr13[3] = ${arr13[3]}<br>arr13[3][2] == ${arr13[3][2]}`
 }
+
+
+// 14
+const btn14 = document.querySelector('.btn14')
+const div14 = document.querySelector('.div14')
+const arr14 = [
+    ['b', 4, 9, [100, 99]], 15, 5, 'str', ['k', 7, 5, 8, 45, [567]]
+]
+
+btn14.onclick = () => {
+    div14.innerHTML = `arr14[0] = ${arr14[0]}<br>arr14[0][1] == ${arr14[0][1]}<hr>
+    arr14[2] = ${arr14[2]}`
+}
