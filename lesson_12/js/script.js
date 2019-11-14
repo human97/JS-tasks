@@ -336,3 +336,34 @@ btn19.onclick = () => {
 
     div19.textContent = out19
 }
+
+
+// #20
+const btn20 = document.querySelector('.btn20')
+const div20 = document.querySelector('.div20')
+let out20 = ''
+
+const arr20 = [
+    ['0-0', '0-1', '0-2'],
+    ['1-0', '1-1', '1-2'],
+    ['2-0', '2-1', '2-2']
+]
+
+for (let i = 0; i < arr20.length; i++) {
+    for (let k = 0; k < arr20[i].length; k++) {
+        out20 += `${arr20[i][k]}|`
+    }
+    out20 += `<br>`
+}
+
+console.log(arr20)
+div20.innerHTML = `<pre>${out20}</pre>`
+
+const comb1 = [arr20[0][0], arr20[0][1], arr20[0][2]]
+const comb2 = [arr20[1][0], arr20[1][1], arr20[1][2]]
+const comb3 = [arr20[2][0], arr20[2][1], arr20[2][2]]
+const comb4 = [arr20[0][0], arr20[1][0], arr20[2][0]]
+const comb5 = [arr20[0][1], arr20[1][1], arr20[2][1]]
+const comb6 = [arr20[0][2], arr20[1][2], arr20[2][2]]
+const comb7 = [arr20[0][0], arr20[1][1], arr20[2][2]]
+const comb8 = [arr20[0][2], arr20[1][1], arr20[2][0]]
