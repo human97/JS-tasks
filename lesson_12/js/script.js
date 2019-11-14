@@ -191,5 +191,5 @@ const arr13 = [
 ]
 
 btn13.onclick = () => {
-    div13.innerHTML = `arr13[0] = ${arr13[0]}<br>arr13[0][1] == ${arr13[0][1]}<hr><br>arr13[3] = ${arr13[3]}<br>arr13[3][2] == ${arr13[3][2]}`
+    div13.innerHTML = `arr13[0] = ${arr13[0]}<br>arr13[0][1] == ${arr13[0][1]}<hr>arr13[3] = ${arr13[3]}<br>arr13[3][2] == ${arr13[3][2]}`
 }
