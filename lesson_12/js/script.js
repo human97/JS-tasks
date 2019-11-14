@@ -206,3 +206,17 @@ btn14.onclick = () => {
     div14.innerHTML = `arr14[0] = ${arr14[0]}<br>arr14[0][1] == ${arr14[0][1]}<hr>
     arr14[2] = ${arr14[2]}`
 }
+
+
+// 15
+const btn15 = document.querySelector('.btn15')
+const div15 = document.querySelector('.div15')
+const arr15 = [
+    ['b', 4, 9, [100, 99], 584], 15, [0, 1, 2, 5, 89], 'str', ['k', 7, 5, 8, 45, [567], ], 'Hi', [4, 5], 1000
+]
+
+btn15.onclick = () => {
+    div15.innerHTML = `arr15[0] = ${arr15[0]}<br>arr15[0][1] == ${arr15[0][1]}<hr>
+    arr15[2] = ${arr15[2]}<br>arr15[2][3] == ${arr15[2][3]}<hr>
+    arr15[6] = [${arr15[6]}]`
+}
