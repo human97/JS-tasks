@@ -245,5 +245,35 @@ const arr16 = [
 btn16.onclick = () => {
     div16.innerHTML = `arr16[0] = ${arr16[0]}<br>arr16[0][1] == ${arr16[0][1]}<hr>
     arr16[2] = ${arr16[2]}<br>arr16[2][3] == ${arr16[2][3]}<hr>
-    arr16[6] = ${arr16[6]}<br>arr16[6][0][1] = ${arr16[6][0][1]}`
+    arr16[6][0] = [${arr16[6][0]}]<br>arr16[6][0][1] = ${arr16[6][0][1]}`
+}
+
+
+// 17
+const btn17 = document.querySelector('.btn17')
+const div17 = document.querySelector('.div17')
+const arr17 = [
+    ['b', [0, 1, 2, 4, 5], 4, 9, [100, 99], 584],
+    17,
+    [0, [0, 5, 2, 3], 1, 2, 5, 89],
+    'str',
+    ['k', 7, 5, 8, 45, [567], ],
+    'Hi',
+    [
+        [0, 6, 2, 3, 4],
+        6,
+        2
+    ],
+    5,
+    1000,
+    'Hello!'
+]
+
+btn17.onclick = () => {
+    div17.innerHTML = `arr17[0][1] = [${arr17[0][1]}]<br>
+    arr17[0][1][3] == ${arr17[0][1][3]}<hr>
+    arr17[2][1] = [${arr17[2][1]}]<br>
+    arr17[2][1][1] == ${arr17[2][1][1]}<hr>
+    arr17[6][0] = [${arr17[6][0]}]<br>
+    arr17[6][0][1] = ${arr17[6][0][1]}`
 }
