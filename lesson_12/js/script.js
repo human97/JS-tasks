@@ -308,3 +308,31 @@ btn18.onclick = () => {
     arr18[6][0][1] = ${arr18[6][0][1]}<hr>
     [${arr18[3]}] == [${arr18[5]}]`
 }
+
+
+// #19
+const btn19 = document.querySelector('.btn19')
+const div19 = document.querySelector('.div19')
+
+btn19.onclick = () => {
+    let out19 = 0
+
+    const arr19 = [
+        [1, 2, 3],
+        ['a', 'b', 'c'],
+        [4, 5, 6],
+        ['d', 'e', 'f'],
+        [7, 8, 9]
+    ]
+
+    for (let i = 0; i < arr19.length; i++) {
+
+        for (let k = 0; k < arr19[i].length; k++) {
+            if (typeof (arr19[i][k]) === 'number') {
+                out19 += arr19[i][k]
+            }
+        }
+    }
+
+    div19.textContent = out19
+}
