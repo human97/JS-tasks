@@ -45,3 +45,30 @@ btn2.onclick = () => {
         false
     }
 }
+
+
+// #03
+const div3 = document.querySelector('.div3')
+const btn3 = document.querySelector('.btn3')
+let out3 = ''
+
+arr3 = {
+    3: 'hello',
+    'one': 'hi',
+    'age': 29,
+    'first name': 'Ivan',
+    'last name': 'Ivanov'
+}
+
+btn3.onclick = () => {
+    if (div3.innerHTML === '') {
+        for (let key in arr3) {
+            if (key.length > 4) {
+                out3 += `key = ${key}<br>`
+            }
+        }
+        div3.innerHTML = `${out3}`
+    } else {
+        false
+    }
+}
