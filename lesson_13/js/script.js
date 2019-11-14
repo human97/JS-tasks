@@ -103,3 +103,23 @@ btn4.onclick = () => {
         false
     }
 }
+
+
+// #05
+const div5 = document.querySelector('.div5')
+const btn5 = document.querySelector('.btn5')
+let out5 = 0
+
+arr5 = {
+    a: 7,
+    z: 4,
+    45: 12,
+    f: 6
+}
+
+btn5.onclick = () => {
+    for (let key in arr5) {
+        out5 += arr5[key]
+    }
+    div5.innerHTML = out5
+}
