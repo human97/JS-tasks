@@ -72,3 +72,18 @@ btn3.onclick = () => {
         false
     }
 }
+
+
+// #04
+const div4 = document.querySelector('.div4')
+const btn4 = document.querySelector('.btn4')
+let out4 = ''
+
+arr4 = {
+    4 : 'hello',
+    'one' : 'hi',
+    'age' : 29,
+    'height' : 205,
+    'first name' : 'Ivan',
+    'last name' : 'Ivanov'
+  }
