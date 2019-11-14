@@ -36,9 +36,10 @@ arr2 = {
 btn2.onclick = () => {
     if (div2.innerHTML === '') {
         for (let key in arr2) {
-            if (arr2[key].length > 4) {
+            out2 += arr2[key].length > 4 ? `${key} = ${arr2[key]}<br>` : '' // вариант через условный (тернарный) оператор
+            /*if (arr2[key].length > 4) {
                 out2 += `${key} = ${arr2[key]}<br>`
-            }
+            }*/
         }
         div2.innerHTML = `${out2}`
     } else {
@@ -63,9 +64,10 @@ arr3 = {
 btn3.onclick = () => {
     if (div3.innerHTML === '') {
         for (let key in arr3) {
-            if (key.length > 4) {
+            out3 += key.length > 4 ? `key = ${key}<br>` : '' // вариант через условный (тернарный) оператор
+            /*if (key.length > 4) {
                 out3 += `key = ${key}<br>`
-            }
+            }*/
         }
         div3.innerHTML = `${out3}`
     } else {
@@ -80,10 +82,24 @@ const btn4 = document.querySelector('.btn4')
 let out4 = ''
 
 arr4 = {
-    4 : 'hello',
-    'one' : 'hi',
-    'age' : 29,
-    'height' : 205,
-    'first name' : 'Ivan',
-    'last name' : 'Ivanov'
-  }
+    4: 'hello',
+    'one': 'hi',
+    'age': 29,
+    'height': 205,
+    'first name': 'Ivan',
+    'last name': 'Ivanov'
+}
+
+btn4.onclick = () => {
+    if (div4.innerHTML === '') {
+        for (let key in arr4) {
+            out4 += typeof arr4[key] == 'number' ? `${arr4[key]}<br>` : '' // вариант через условный (тернарный) оператор
+            /*if (typeof arr4[key] == 'number') {
+                out4 += `${arr4[key]}<br>`
+            }*/
+        }
+        div4.innerHTML = `${out4}`
+    } else {
+        false
+    }
+}
