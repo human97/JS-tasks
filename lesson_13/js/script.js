@@ -123,3 +123,23 @@ btn5.onclick = () => {
     }
     div5.innerHTML = out5
 }
+
+
+// #06
+const div6 = document.querySelector('.div6')
+const btn6 = document.querySelector('.btn6')
+
+const arr6 = {
+    'name': 'John',
+    'age': 29,
+    'sex': 'male',
+    'height': 184
+}
+
+btn6.onclick = () => {
+    let out6 = ''
+    for (let key in arr6) {
+        out6 += `${key} = ${arr6[key]}<br>`
+    }
+    div6.innerHTML = `${out6}`
+}
