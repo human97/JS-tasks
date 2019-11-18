@@ -143,3 +143,24 @@ btn6.onclick = () => {
     }
     div6.innerHTML = `${out6}`
 }
+
+
+// #07
+const div7 = document.querySelector('.div7')
+const btn7 = document.querySelector('.btn7')
+let inp7_1 = document.querySelector('.inp7_1')
+let inp7_2 = document.querySelector('.inp7_2')
+let out7 = ''
+
+let arr7 = {}
+
+btn7.onclick = () => {
+    let inp7Key = inp7_1.value.trim()
+    let inp7Val = inp7_2.value.trim()
+    arr7[inp7Key] = inp7Val
+    for (let key in arr7) {
+        out7 += `${key} = ${arr7[key]}<br>`
+    }
+    div7.innerHTML = out7
+    console.log(arr7)
+}
