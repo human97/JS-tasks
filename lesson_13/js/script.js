@@ -162,5 +162,4 @@ btn7.onclick = () => {
         out7 += `${key} = ${arr7[key]}<br>`
     }
     div7.innerHTML = out7
-    console.log(arr7)
 }
