@@ -148,8 +148,8 @@ btn6.onclick = () => {
 // #07
 const div7 = document.querySelector('.div7')
 const btn7 = document.querySelector('.btn7')
-let inp7_1 = document.querySelector('.inp7_1')
-let inp7_2 = document.querySelector('.inp7_2')
+const inp7_1 = document.querySelector('.inp7_1')
+const inp7_2 = document.querySelector('.inp7_2')
 let out7 = ''
 
 let arr7 = {
@@ -165,3 +165,6 @@ btn7.onclick = () => {
     }
     div7.innerHTML = out7
 }
+
+
+// #08
