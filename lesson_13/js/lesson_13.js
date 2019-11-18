@@ -168,3 +168,17 @@ btn7.onclick = () => {
 
 
 // #08
+const div8 = document.querySelector('.div8')
+const btn8Del = document.querySelector('.btn8_del')
+const inp8Del = document.querySelector('.inp8_del')
+let out8 = ''
+
+btn8Del.onclick = () => {
+    let inp8Key = inp8Del.value.trim()
+    delete arr7[inp8Key]
+    for (let key in arr7) {
+        out8 += `${key} = ${arr7[key]}<br>`
+    }
+    div8.innerHTML = out8
+    console.log(arr7)
+}
