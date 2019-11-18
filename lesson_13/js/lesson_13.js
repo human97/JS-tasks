@@ -148,11 +148,16 @@ btn7.onclick = () => {
     let out7 = ''
     let inp7Key = inp7_1.value.trim()
     let inp7Val = inp7_2.value.trim()
-    arr7[inp7Key] = inp7Val
-    for (let key in arr7) {
-        out7 += `${key} = ${arr7[key]}<br>`
+    if (inp7Key !== '') {
+        arr7[inp7Key] = inp7Val
+        for (let key in arr7) {
+            out7 += `${key} = ${arr7[key]}<br>`
+        }
+        div7.innerHTML = out7
+        console.log(arr7)
+    } else {
+        return false
     }
-    div7.innerHTML = out7
 }
 
 
