@@ -21,7 +21,6 @@ btn1.onclick = () => {
 // #02
 const div2 = document.querySelector('.div2')
 const btn2 = document.querySelector('.btn2')
-let out2 = ''
 
 arr2 = {
     3: 'hello',
@@ -31,17 +30,15 @@ arr2 = {
 }
 
 btn2.onclick = () => {
-    if (div2.innerHTML === '') {
-        for (let key in arr2) {
-            out2 += arr2[key].length > 4 ? `${key} = ${arr2[key]}<br>` : '' // вариант через условный (тернарный) оператор
-            /*if (arr2[key].length > 4) {
-                out2 += `${key} = ${arr2[key]}<br>`
-            }*/
-        }
-        div2.innerHTML = `${out2}`
-    } else {
-        false
+    let out2 = ''
+
+    for (let key in arr2) {
+        out2 += arr2[key].length > 4 ? `${key} = ${arr2[key]}<br>` : '' // вариант через условный (тернарный) оператор
+        /*if (arr2[key].length > 4) {
+            out2 += `${key} = ${arr2[key]}<br>`
+        }*/
     }
+    div2.innerHTML = `${out2}`
 }
 
 
