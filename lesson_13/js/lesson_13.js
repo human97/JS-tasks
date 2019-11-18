@@ -197,3 +197,21 @@ btn9Del.onclick = () => {
     }
     div7.innerHTML = out9
 }
+
+
+// #10
+const div10 = document.querySelector('.div10')
+const btn10 = document.querySelector('.btn10')
+const inp10 = document.querySelector('.inp10')
+
+btn10.onclick = () => {
+    let out10 = ''
+    let inp10Key = inp10.value.trim()
+
+    if (arr7[inp10Key] === undefined) {
+        out10 = 'false'
+    } else {
+        out10 = 'true'
+    }
+    div10.innerHTML = out10
+}
