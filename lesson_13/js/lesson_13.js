@@ -152,7 +152,9 @@ let inp7_1 = document.querySelector('.inp7_1')
 let inp7_2 = document.querySelector('.inp7_2')
 let out7 = ''
 
-let arr7 = {}
+let arr7 = {
+    'age': 100,
+}
 
 btn7.onclick = () => {
     let inp7Key = inp7_1.value.trim()
