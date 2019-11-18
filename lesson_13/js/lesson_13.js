@@ -180,7 +180,6 @@ btn8Del.onclick = () => {
 
 
 // #09
-const div9 = document.querySelector('.div9')
 const btn9Del = document.querySelector('.btn9_del')
 const inp9Del = document.querySelector('.inp9_del')
 
@@ -196,5 +195,5 @@ btn9Del.onclick = () => {
             }
         }
     }
-    div9.innerHTML = out9
+    div7.innerHTML = out9
 }
