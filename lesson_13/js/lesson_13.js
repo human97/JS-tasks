@@ -184,9 +184,9 @@ btn8Del.onclick = () => {
 const div9 = document.querySelector('.div9')
 const btn9Del = document.querySelector('.btn9_del')
 const inp9Del = document.querySelector('.inp9_del')
-let out9 = ''
 
 btn9Del.onclick = () => {
+    let out9 = ''
     let inp9Key = inp9Del.value.trim()
 
     for (let key in arr7) {
