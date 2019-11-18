@@ -150,13 +150,13 @@ const div7 = document.querySelector('.div7')
 const btn7 = document.querySelector('.btn7')
 const inp7_1 = document.querySelector('.inp7_1')
 const inp7_2 = document.querySelector('.inp7_2')
-let out7 = ''
 
 let arr7 = {
     'age': 100,
 }
 
 btn7.onclick = () => {
+    let out7 = ''
     let inp7Key = inp7_1.value.trim()
     let inp7Val = inp7_2.value.trim()
     arr7[inp7Key] = inp7Val
@@ -180,5 +180,25 @@ btn8Del.onclick = () => {
         out8 += `${key} = ${arr7[key]}<br>`
     }
     div8.innerHTML = out8
-    console.log(arr7)
+}
+
+
+// #09
+const div9 = document.querySelector('.div9')
+const btn9Del = document.querySelector('.btn9_del')
+const inp9Del = document.querySelector('.inp9_del')
+let out9 = ''
+
+btn9Del.onclick = () => {
+    let inp9Key = inp9Del.value.trim()
+
+    for (let key in arr7) {
+        if (arr7[key] == inp9Key) {
+            delete arr7[key]
+            for (let key in arr7) {
+                out9 += `${key} = ${arr7[key]}<br>`
+            }
+        }
+    }
+    div9.innerHTML = out9
 }
