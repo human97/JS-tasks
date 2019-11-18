@@ -154,7 +154,6 @@ btn7.onclick = () => {
             out7 += `${key} = ${arr7[key]}<br>`
         }
         div7.innerHTML = out7
-        console.log(arr7)
     } else {
         return false
     }
@@ -165,15 +164,19 @@ btn7.onclick = () => {
 const div8 = document.querySelector('.div8')
 const btn8Del = document.querySelector('.btn8_del')
 const inp8Del = document.querySelector('.inp8_del')
-let out8 = ''
 
 btn8Del.onclick = () => {
+    let out8 = ''
     let inp8Key = inp8Del.value.trim()
-    delete arr7[inp8Key]
-    for (let key in arr7) {
-        out8 += `${key} = ${arr7[key]}<br>`
+    if (inp8Key !== '') {
+        delete arr7[inp8Key]
+        for (let key in arr7) {
+            out8 += `${key} = ${arr7[key]}<br>`
+        }
+        div8.innerHTML = out8
+    } else {
+        return false
     }
-    div8.innerHTML = out8
 }
 
 
