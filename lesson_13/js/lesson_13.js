@@ -308,6 +308,5 @@ btn12.onclick = () => {
 // #13
 const btn13 = document.querySelector('.btn13')
 btn13.onclick = () => {
-    const selInd12 = document.querySelector('.sel12').options.selectedIndex
-    div11.innerHTML = arr11[sel12.options[selInd12].value].reverse().join(', ')
+    div11.innerHTML = arr11[sel12.value].reverse().join(', ')
 }
