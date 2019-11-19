@@ -301,8 +301,7 @@ const sel12 = document.querySelector('.sel12')
 const btn12 = document.querySelector('.btn12')
 
 btn12.onclick = () => {
-    const selInd12 = document.querySelector('.sel12').options.selectedIndex
-    div11.innerHTML = arr11[sel12.options[selInd12].value].join(', ')
+    div11.innerHTML = arr11[sel12.value].join(', ')
 }
 
 
