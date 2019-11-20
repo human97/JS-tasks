@@ -329,7 +329,6 @@ btn14.addEventListener('click', function () {
             if (sel14.value === arr11[key][i]) {
                 div11.innerHTML = `${key}`
                 // это дополнения
-                div11.style.color = key
                 this.style.color = key
             }
         }
