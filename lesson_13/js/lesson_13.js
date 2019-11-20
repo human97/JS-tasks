@@ -289,7 +289,7 @@ const arr11 = {
 
 btn11.onclick = () => {
     out11 = ''
-    for (const key in arr11) {
+    for (let key in arr11) {
         out11 += `${key} : ${arr11[key].join(', ')}<hr>`
     }
     div11.innerHTML = out11
