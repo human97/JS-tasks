@@ -310,3 +310,28 @@ const btn13 = document.querySelector('.btn13')
 btn13.onclick = () => {
     div11.innerHTML = arr11[sel12.value].reverse().join(', ')
 }
+
+
+// #14
+const sel14 = document.querySelector('.sel14')
+const btn14 = document.querySelector('.btn14')
+
+for (let key in arr11) {
+    for (let i = 0; i < arr11[key].length; i++) {
+        sel14.add(new Option(arr11[key][i]))
+    }
+}
+
+// реализовал через addEventListener
+btn14.addEventListener('click', function () {
+    for (let key in arr11) {
+        for (let i = 0; i < arr11[key].length; i++) {
+            if (sel14.value === arr11[key][i]) {
+                div11.innerHTML = `${key}`
+                // это дополнения
+                div11.style.color = key
+                this.style.color = key
+            }
+        }
+    }
+})
