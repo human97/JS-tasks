@@ -335,3 +335,8 @@ btn14.addEventListener('click', function () {
     }
 })
 
+
+// #15
+const sel14 = document.querySelector('.sel14')
+const sel14 = document.querySelector('.sel14')
+const btn14 = document.querySelector('.btn14')
