@@ -337,6 +337,35 @@ btn14.addEventListener('click', function () {
 
 
 // #15
-const sel14 = document.querySelector('.sel14')
-const sel14 = document.querySelector('.sel14')
-const btn14 = document.querySelector('.btn14')
+const sel15_1 = document.querySelector('.sel15_1')
+const sel15_2 = document.querySelector('.sel15_2')
+const btn15 = document.querySelector('.btn15')
+
+for (let key in arr11) {
+    for (let i = 0; i < arr11[key].length; i++) {
+        sel15_1.add(new Option(arr11[key][i]))
+        sel15_2.add(new Option(arr11[key][i]))
+    }
+}
+
+function branch15(station) {
+    for (let key in arr11) {
+        for (let i = 0; i < arr11[key].length; i++) {
+            if (station.value === arr11[key][i]) {
+                return key
+            }
+        }
+    }
+}
+
+btn15.addEventListener('click', function () {
+    if (branch15(sel15_1) === (branch15(sel15_2))) {
+        let selIndx1 = sel15_1.options.selectedIndex
+        let selIndx2 = sel15_2.options.selectedIndex
+
+        selIndx1 !== selIndx2 ? div11.innerHTML = `${Math.abs(selIndx2 - selIndx1)-1}` : div11.innerHTML = `Одинаковые станции!`
+
+    } else {
+        div11.innerHTML = `Выберите одинаковые ветки!`
+    }
+})
