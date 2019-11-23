@@ -316,11 +316,16 @@ btn13.onclick = () => {
 const sel14 = document.querySelector('.sel14')
 const btn14 = document.querySelector('.btn14')
 
-for (let key in arr11) {
-    for (let i = 0; i < arr11[key].length; i++) {
-        sel14.add(new Option(arr11[key][i]))
+
+const allStation = (sel, obj) => {
+    for (let key in obj) {
+        for (let i = 0; i < obj[key].length; i++) {
+            sel.add(new Option(obj[key][i]))
+        }
     }
 }
+
+allStation(sel14, arr11) // все станции из объекта arr11 добавлены в select.sel14
 
 // реализовал через addEventListener
 btn14.addEventListener('click', function () {
