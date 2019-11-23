@@ -346,14 +346,10 @@ const sel15_1 = document.querySelector('.sel15_1')
 const sel15_2 = document.querySelector('.sel15_2')
 const btn15 = document.querySelector('.btn15')
 
-for (let key in arr11) {
-    for (let i = 0; i < arr11[key].length; i++) {
-        sel15_1.add(new Option(arr11[key][i]))
-        sel15_2.add(new Option(arr11[key][i]))
-    }
-}
+allStation(sel15_1, arr11) // все станции из объекта arr11 добавлены в select.sel15_1
+allStation(sel15_2, arr11) // все станции из объекта arr11 добавлены в select.sel15_2
 
-function branch15(station) {
+const branch15 = station => {
     for (let key in arr11) {
         for (let i = 0; i < arr11[key].length; i++) {
             if (station.value === arr11[key][i]) {
