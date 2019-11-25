@@ -316,7 +316,7 @@ btn13.onclick = () => {
 const sel14 = document.querySelector('.sel14')
 const btn14 = document.querySelector('.btn14')
 
-
+// функция добавления options в select из объекта
 const allStation = (sel, obj) => {
     for (let key in obj) {
         for (let i = 0; i < obj[key].length; i++) {
