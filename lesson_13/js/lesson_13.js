@@ -370,3 +370,20 @@ btn15.addEventListener('click', function () {
         div11.innerHTML = `Выберите одинаковые ветки!`
     }
 })
+
+
+// #16
+const sel16 = document.querySelector('.sel16')
+const rad16All = document.getElementsByName('branch160')
+
+for (let i = 0; i < rad16All.length; i++) {
+    rad16All[i].onchange = branch16
+}
+
+function branch16() {
+    let br16 = arr11[this.value]
+    sel16.length = 0
+    for (let i = 0; i < br16.length; i++) {
+        sel16.add(new Option(br16[i]))
+    }
+}
