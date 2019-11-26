@@ -469,3 +469,20 @@ btn17.addEventListener('click', function () {
     }
     div17.innerHTML = `${out17}`
 })
+
+
+// #18
+const btn18 = document.querySelector('.btn18')
+
+btn18.addEventListener('click', function () {
+    let out18 = ''
+    for (let key in arr17) {
+        for (let i = 0; i < arr17[key].length; i++) {
+            let station18 = arr17[key][i]
+            if (Array.isArray(station18) && station18[1] === 1) {
+                out18 += `${station18.join(' - ')}<br>`
+            }
+        }
+    }
+    div17.innerHTML = `${out18}`
+})
