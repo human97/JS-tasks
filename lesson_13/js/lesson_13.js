@@ -374,7 +374,7 @@ btn15.addEventListener('click', function () {
 
 // #16
 const sel16 = document.querySelector('.sel16')
-const rad16All = document.getElementsByName('branch160')
+const rad16All = document.querySelectorAll('input[name=branch16]')
 
 for (let i = 0; i < rad16All.length; i++) {
     rad16All[i].onchange = branch16
