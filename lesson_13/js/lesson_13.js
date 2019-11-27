@@ -486,3 +486,38 @@ btn18.addEventListener('click', function () {
     }
     div17.innerHTML = `${out18}`
 })
+
+
+// #19
+const div19 = document.querySelector('.div19')
+const btn19 = document.querySelector('.btn19')
+
+arr19 = {
+    Russia: {
+        capital: 'Moscow',
+        population: 145000000,
+        area: 17125200
+    },
+    China: {
+        capital: 'Beijing',
+        population: 1404000000,
+        area: 9600000
+    },
+    India: {
+        capital: 'Delhi',
+        population: 1324171354,
+        area: 3287263
+    },
+}
+
+btn19.addEventListener('click', function () {
+    let out19 = ''
+    for (let country in arr19) {
+        out19 += `${country}<br>`
+        for (let key in arr19[country]) {
+            out19 += `${key}: ${arr19[country][key]}<br>`
+        }
+        out19 += `<hr>`
+    }
+    div19.innerHTML = `${out19}`
+})
