@@ -383,8 +383,8 @@ for (let i = 0; i < rad16All.length; i++) {
 function branch16() {
     let br16 = arr11[this.value]
     sel16.length = 0
-    for (let i = 0; i < br16.length; i++) {
-        sel16.add(new Option(br16[i]))
+    for (let i = 0; i < arr11[this.value].length; i++) {
+        sel16.add(new Option(arr11[this.value][i]))
     }
 }
 
@@ -492,7 +492,7 @@ btn18.addEventListener('click', function () {
 const div19 = document.querySelector('.div19')
 const btn19 = document.querySelector('.btn19')
 
-arr19 = {
+const arr19 = {
     Russia: {
         capital: 'Moscow',
         population: 145000000,
@@ -520,4 +520,34 @@ btn19.addEventListener('click', function () {
         out19 += `<hr>`
     }
     div19.innerHTML = `${out19}`
+})
+
+
+// #20
+let out20 = ''
+const sel20 = document.querySelector('.sel20')
+let countrisSel20 = Object.keys(arr19)
+
+// при входе на страницу цикл добавляет в select.sel20 список стран из arr19
+for (let i = 0; i < countrisSel20.length; i++) {
+    sel20.add(new Option(countrisSel20[i]))
+}
+
+// при входе на страницу цикл добавляет в div.div20 object[0] из arr19
+for (let country in arr19) {
+    out20 += `${country}<br>`
+    for (let key in arr19[country]) {
+        out20 += `${key}: ${arr19[country][key]}<br>`
+    }
+    div19.innerHTML = `${out20}`
+    break
+}
+
+sel20.addEventListener('change', function () {
+    let countrySel20 = arr19[this.value]
+    out20 = `${this.value}<br>`
+    for (let key in countrySel20) {
+        out20 += `${key}: ${countrySel20[key]}<br>`
+    }
+    div19.innerHTML = `${out20}`
 })
