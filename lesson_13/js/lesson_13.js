@@ -376,6 +376,11 @@ btn15.addEventListener('click', function () {
 const sel16 = document.querySelector('.sel16')
 const rad16All = document.querySelectorAll('input[name=branch16]')
 
+// при входе на страницу цикл добавляет в select.sel16 станции ветки red из объекта arr11
+for (let i = 0; i < arr11.red.length; i++) {
+    sel16.add(new Option(arr11.red[i]))
+}
+
 for (let i = 0; i < rad16All.length; i++) {
     rad16All[i].onchange = branch16
 }
