@@ -297,8 +297,20 @@ btn11.onclick = () => {
 
 
 // #12
+// функция добавления списка в селект из массива
+const addOptions = (select, arr) => {
+    for (let i = 0; i < arr.length; i++) {
+        select.add(new Option(arr[i]))
+    }
+}
+
 const sel12 = document.querySelector('.sel12')
 const btn12 = document.querySelector('.btn12')
+
+// получили массив ключей объекта arr11
+let branch11 = Object.keys(arr11)
+
+addOptions(sel12, branch11)
 
 btn12.onclick = () => {
     div11.innerHTML = arr11[sel12.value].join(', ')
@@ -377,6 +389,7 @@ const sel16 = document.querySelector('.sel16')
 const rad16All = document.querySelectorAll('input[name=branch16]')
 
 // при входе на страницу цикл добавляет в select.sel16 станции ветки red из объекта arr11
+// можно доработать, чтобы при загрузке страници определял выбранный radio и добавлять соответствующие станции в select.sel16
 for (let i = 0; i < arr11.red.length; i++) {
     sel16.add(new Option(arr11.red[i]))
 }
