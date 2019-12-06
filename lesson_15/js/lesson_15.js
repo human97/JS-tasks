@@ -32,3 +32,13 @@ btn3.addEventListener('click', () => {
     }
     inp2.value = ''
 })
+
+
+// #04
+const btn4 = document.querySelector('.btn4')
+const t4 = () => {
+    let inp2V = +inp2.value
+    console.log(set1.has(inp2V))
+}
+
+btn4.addEventListener('click', t4)
