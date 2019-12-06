@@ -42,3 +42,10 @@ const t4 = () => {
 }
 
 btn4.addEventListener('click', t4)
+
+
+// #05
+const btn5 = document.querySelector('.btn5')
+const div5 = document.querySelector('.div5')
+
+btn5.addEventListener('click', () => div5.innerHTML = `${set1.size}`)
