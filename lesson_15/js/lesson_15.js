@@ -16,4 +16,19 @@ const btn2 = document.querySelector('.btn2')
 btn2.addEventListener('click', () => {
     set1.add(inp2.value)
     console.log(set1)
+    inp2.value = ''
+})
+
+
+// #03
+const btn3 = document.querySelector('.btn3')
+btn3.addEventListener('click', () => {
+    let inp2VT = inp2.value.trim()
+    if (inp2VT.length === 0) {
+        alert('input is empty')
+    } else {
+        set1.delete(inp2VT)
+        console.log(set1)
+    }
+    inp2.value = ''
 })
