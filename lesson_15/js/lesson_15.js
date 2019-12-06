@@ -49,3 +49,18 @@ const btn5 = document.querySelector('.btn5')
 const div5 = document.querySelector('.div5')
 
 btn5.addEventListener('click', () => div5.innerHTML = `${set1.size}`)
+
+
+// #06
+let arr6 = [3, 4, 3, 2, 4, 56, 1, 23]
+
+const btn6 = document.querySelector('.btn6')
+const div6 = document.querySelector('.div6')
+
+const t6 = () => {
+    let set6 = new Set(arr6)
+    console.log(set6)
+    div6.innerHTML = `${set6.size}`
+}
+
+btn6.addEventListener('click', t6)
