@@ -168,7 +168,7 @@ const div12 = document.querySelector('.div12')
 const set12 = new Set([0, 1, 2, 3, 'end'])
 
 const t12 = set => {
-    let arr12R = Array.from(set12)
+    let arr12R = Array.from(set)
     console.log(arr12R)
     div12.innerHTML = `${arr12R}`
 }
