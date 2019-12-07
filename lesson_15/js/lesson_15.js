@@ -81,3 +81,30 @@ pass7.onclick = () => {
     valid7.textContent = ''
     pass7.value = ''
 }
+
+
+// #08
+const btn8 = document.querySelector('.btn8')
+const div8 = document.querySelector('.div8')
+
+let set8 = new Set([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+let set8Even = []
+let out8 = ''
+const evenElement = set => {
+    for (let even of set) {
+        if (even % 2 === 0) {
+            set8Even.push(even)
+        }
+    }
+    // вариант с join
+    out8 = set8Even.join(',&nbsp')
+
+    // вариант через цикл for
+    // for (let i = 0; i < set8Even.length; i++) {
+    //     out8 += `${set8Even[i]}&nbsp`
+    // }
+
+    div8.innerHTML = `${out8}`
+}
+
+btn8.addEventListener('click', () => evenElement(set8))
