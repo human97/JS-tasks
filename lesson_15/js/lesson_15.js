@@ -121,3 +121,25 @@ const reverseSet = (set) => {
 }
 
 btn9.addEventListener('click', () => reverseSet(set9))
+
+
+// #10
+const btn10 = document.querySelector('.btn10')
+
+const arr10 = [0, 1, 2, 3, 1, 1, 1, 55, 'true', 7, 7, 197, 3, 99, 'end', 'end']
+const arr10Set = new Set(arr10)
+let arr10R = {}
+
+btn10.addEventListener('click', () => {
+    let count = 0
+    for (let r of arr10Set) {
+        for (let i = 0; i < arr10.length; i++) {
+            if (r === arr10[i]) {
+                count++
+                arr10R[r] = count
+            }
+        }
+        count = 0
+    }
+    console.log(arr10R)
+})
