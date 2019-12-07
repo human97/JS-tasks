@@ -133,7 +133,7 @@ let arr10R = {}
 btn10.addEventListener('click', () => {
     let count = 0
     for (let r of arr10Set) {
-        for (let i = 0; i < arr10.length; i++) {
+        for (let i = 0, length = arr10.length; i < length; i++) {
             if (r === arr10[i]) {
                 count++
                 arr10R[r] = count
@@ -142,4 +142,20 @@ btn10.addEventListener('click', () => {
         count = 0
     }
     console.log(arr10R)
+})
+
+
+// #11
+const btn11 = document.querySelector('.btn11')
+const div11 = document.querySelector('.div11')
+const inp11 = document.querySelector('.inp11')
+
+const arrSet = ['1', '2', '3', '4', '5', '6']
+
+btn11.addEventListener('click', () => {
+    let inp11V = inp11.value
+    if (!arrSet.includes(inp11V)) {
+        arrSet.push(inp11V)
+    }
+    div11.innerHTML = `${arrSet}`
 })
