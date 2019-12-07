@@ -177,16 +177,16 @@ const t12 = set => {
 btn12.addEventListener('click', () => t12(set12))
 
 
-// #13
+// #13-14
 const btn13 = document.querySelector('.btn13')
 const div13 = document.querySelector('.div13')
 
 const set13 = new Set([1, 2, 3, 4, 0])
-const show13 = (set, div) => {
+const show13 = (set, div, sep) => {
     let out13 = ''
-    for (let el of set) out13 += `${el}&nbsp`
+    for (let el of set) out13 += `${el}${sep}`
     div.innerHTML = out13
 }
 btn13.addEventListener('click', () => {
-    show13(set13, div13)
+    show13(set13, div13, '&nbsp')
 })
