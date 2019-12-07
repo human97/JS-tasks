@@ -108,3 +108,16 @@ const evenElement = set => {
 }
 
 btn8.addEventListener('click', () => evenElement(set8))
+
+
+// #09
+const btn9 = document.querySelector('.btn9')
+
+let set9 = new Set([0, 1, '0', 55, 92, 'yes', 103, 'Hello', 'world', '!', 99, 'end'])
+
+const reverseSet = (set) => {
+    let revSet9 = new Set([...set].reverse())
+    console.log([...revSet9])
+}
+
+btn9.addEventListener('click', () => reverseSet(set9))
