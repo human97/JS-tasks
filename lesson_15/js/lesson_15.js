@@ -64,3 +64,20 @@ const t6 = () => {
 }
 
 btn6.addEventListener('click', t6)
+
+
+// #07
+const btn7 = document.querySelector('.btn7')
+const pass7 = document.getElementById('pass7')
+const valid7 = document.querySelector('.valid7')
+
+btn7.addEventListener('click', () => {
+    let pass7VL = pass7.value.length
+    let set7 = new Set(pass7.value)
+    set7.size === pass7VL ? valid7.textContent = 'True' : valid7.textContent = 'characters in your password are repeated!'
+})
+
+pass7.onclick = () => {
+    valid7.textContent = ''
+    pass7.value = ''
+}
