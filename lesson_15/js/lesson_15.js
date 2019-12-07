@@ -169,6 +169,7 @@ const set12 = new Set([0, 1, 2, 3, 'end'])
 
 const t12 = set => {
     let arr12R = Array.from(set)
+    //let arr12R = [...set]
     console.log(arr12R)
     div12.innerHTML = `${arr12R}`
 }
