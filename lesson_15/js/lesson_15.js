@@ -207,11 +207,12 @@ for (let i = 0; i < arr15.length; i++) {
     set15.add(arr15[i])
 }
 
-btn15.addEventListener('click', () => div15.textContent = set15.size)
+btn15.addEventListener('click', () => div15.textContent = `${set15.size}`)
 
 
 // #16
 const btn16 = document.querySelector('.btn16')
+const div16 = document.querySelector('.div16')
 let set16 = new Set()
 
 arr16 = [{
@@ -232,4 +233,4 @@ for (let i = 0; i < arr16.length; i++) {
     set16.add(arr16[i])
 }
 
-btn16.addEventListener('click', () => console.log(set16.size))
+btn16.addEventListener('click', () => div16.textContent = `${set16.size}`)
