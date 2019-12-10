@@ -207,3 +207,28 @@ for (let i = 0; i < arr15.length; i++) {
 }
 
 btn15.addEventListener('click', () => console.log(set15.size))
+
+
+// #16
+const btn16 = document.querySelector('.btn16')
+let set16 = new Set()
+
+arr16 = [{
+        Ivan: 1
+    },
+    {
+        Ivan: 1
+    },
+    {
+        Ivan: 2
+    },
+    {
+        Serg: 0
+    }
+]
+
+for (let i = 0; i < arr16.length; i++) {
+    set16.add(arr16[i])
+}
+
+btn16.addEventListener('click', () => console.log(set16.size))
