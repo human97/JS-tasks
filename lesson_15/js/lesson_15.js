@@ -234,3 +234,11 @@ for (let i = 0; i < arr16.length; i++) {
 }
 
 btn16.addEventListener('click', () => div16.textContent = `${set16.size}`)
+
+
+// #17
+const btn17 = document.querySelector('.btn17')
+const str17 = 'Example'
+const set17 = new Set(str17)
+
+btn17.addEventListener('click', () => console.log(set17))
