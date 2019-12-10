@@ -190,3 +190,20 @@ const show13 = (set, div, sep) => {
 btn13.addEventListener('click', () => {
     show13(set13, div13, '&nbsp')
 })
+
+
+// #15
+const btn15 = document.querySelector('.btn15')
+let set15 = new Set()
+
+const arr15 = [
+    [1, 0],
+    [1, 0],
+    [2, 0]
+]
+
+for (let i = 0; i < arr15.length; i++) {
+    set15.add(arr15[i])
+}
+
+btn15.addEventListener('click', () => console.log(set15.size))
