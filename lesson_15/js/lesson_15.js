@@ -194,6 +194,7 @@ btn13.addEventListener('click', () => {
 
 // #15
 const btn15 = document.querySelector('.btn15')
+const div15 = document.querySelector('.div15')
 let set15 = new Set()
 
 const arr15 = [
@@ -206,7 +207,7 @@ for (let i = 0; i < arr15.length; i++) {
     set15.add(arr15[i])
 }
 
-btn15.addEventListener('click', () => console.log(set15.size))
+btn15.addEventListener('click', () => div15.textContent = set15.size)
 
 
 // #16
