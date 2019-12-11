@@ -238,7 +238,34 @@ btn16.addEventListener('click', () => div16.textContent = `${set16.size}`)
 
 // #17
 const btn17 = document.querySelector('.btn17')
-const str17 = 'Example'
+const str17 = 'example'
 const set17 = new Set(str17)
 
 btn17.addEventListener('click', () => console.log(set17))
+
+
+// #18
+const btn18 = document.querySelector('.btn18')
+
+const dupLetters18 = str => {
+    let strTrimLow = str.trim().toLowerCase() // приводит строку к нижнему регистру и удаляет пробелы до и после
+    let result18 = {}
+    let set18 = new Set(strTrimLow)
+    let count = 0
+    let arr18 = strTrimLow.split('')
+
+    for (let key of set18) {
+        for (let i = 0; i < arr18.length; i++) {
+            if (key === arr18[i]) {
+                count++
+                result18[key] = count
+            }
+        }
+        count = 0
+    }
+    console.log(result18)
+}
+
+btn18.addEventListener('click', () => {
+    dupLetters18('  Google   ')
+})
