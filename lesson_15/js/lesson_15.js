@@ -269,3 +269,30 @@ const dupLetters18 = str => {
 btn18.addEventListener('click', () => {
     dupLetters18('  Google   ')
 })
+
+
+// #19
+const btn19 = document.querySelector('.btn19')
+const div19 = document.querySelector('.div19')
+
+let set19 = new Set()
+set19.add(1)
+set19.add(5)
+set19.add(99)
+set19.add('Hi')
+set19.add('str')
+set19.add(100)
+set19.add('end')
+
+btn19.addEventListener('click', () => {
+    let out19 = ''
+    let count = 0
+    for (let el of set19) {
+        if (count % 2 !== 0) {
+            out19 += `${el}&nbsp`
+            console.log(el)
+        }
+        count++
+    }
+    div19.innerHTML = `${out19}`
+})
