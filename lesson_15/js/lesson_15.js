@@ -299,3 +299,18 @@ btn19.addEventListener('click', () => {
 
 
 // #20
+const btn20 = document.querySelector('.btn20')
+const arr20 = [1, 2, 3, 4, 5, 6, 7, 8]
+
+const evenOdd = arr = () => {
+    let setEven20 = new Set()
+    let setOdd20 = new Set()
+    for (let i = 0; i < arr20.length; i++) {
+        i % 2 === 0 ? setEven20.add(arr20[i]) : setOdd20.add(arr20[i])
+    }
+    console.log(setEven20, setOdd20)
+}
+
+btn20.addEventListener('click', () => {
+    evenOdd(arr20)
+})
