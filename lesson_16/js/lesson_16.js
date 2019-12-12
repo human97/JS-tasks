@@ -41,3 +41,16 @@ const t3 = () => {
 }
 
 btn3.addEventListener('click', t3)
+
+
+// #04
+const divS4 = document.querySelectorAll('.div3')
+const btn4 = document.querySelector('.btn4')
+
+const t4 = () => {
+    for (let i = 0; i < divS4.length; i++) {
+        divS4[i].textContent = 4
+    }
+}
+
+btn4.addEventListener('click', t4)
