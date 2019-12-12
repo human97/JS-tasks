@@ -13,3 +13,18 @@ const t1 = () => {
 }
 
 btn1.addEventListener('click', t1)
+
+
+// #02
+const div2 = document.querySelector('.div2')
+const btn2 = document.querySelector('.btn2')
+
+const t2 = () => {
+    let arr2_res = ''
+    for (let i = 0; i < arr1.length; i++) {
+        arr2_res += `${i} - ${arr1[i]}<br>`
+    }
+    div2.innerHTML = `${arr2_res}`
+}
+
+btn2.addEventListener('click', t2)
