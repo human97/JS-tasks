@@ -28,3 +28,16 @@ const t2 = () => {
 }
 
 btn2.addEventListener('click', t2)
+
+
+// #03
+const divS3 = document.getElementsByClassName('div3')
+const btn3 = document.querySelector('.btn3')
+
+const t3 = () => {
+    for (let i = 0; i < divS3.length; i++) {
+        divS3[i].textContent = 3
+    }
+}
+
+btn3.addEventListener('click', t3)
