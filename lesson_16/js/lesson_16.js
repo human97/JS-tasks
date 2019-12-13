@@ -127,3 +127,22 @@ const t8 = () => {
 }
 
 btn8.addEventListener('click', t8)
+
+
+// #09
+const div9 = document.querySelector('.div9')
+const btn9 = document.querySelector('.btn9')
+const arr9 = [4, 6, 9, "hello"]
+
+const t9 = () => {
+    let arr9Res = ''
+    let newArr9 = {}
+    for (let i = 0; i < arr9.length; i++) {
+        newArr9[arr9[i]] = arr9[i]
+        arr9Res += `${arr9[i]}&nbsp;:&nbsp;${arr9[i]}<br>`
+    }
+    console.log(newArr9)
+    div9.innerHTML = `${arr9Res}`
+}
+
+btn9.addEventListener('click', t9)
