@@ -61,9 +61,14 @@ const btn5 = document.querySelector('.btn5')
 
 // в решении #03 уже получены элементы в переменную divs3(используем её)
 
-const t5=()=>{
-    const div5 = document.createElement('div')
+const div5 = document.createElement('div')
+const t5 = () => {
     divs3.push(div5)
 }
 
-btn5.addEventListener('click',t5) // TypeError: divs3.push is not a function
+btn5.addEventListener('click', t5) // TypeError: divs3.push is not a function
+
+
+// #06
+const btn6 = document.querySelector('.btn6')
+// в решении #05 элемент div уже создан div5(используем её)
