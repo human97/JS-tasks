@@ -80,3 +80,30 @@ const t6 = () => {
 }
 
 btn6.addEventListener('click', t6) // TypeError: divs4.push is not a function
+
+
+// #07
+const div7 = document.querySelector('.div7')
+const btn7 = document.querySelector('.btn7')
+
+let arr7 = [
+    [1, 2],
+    [3, 4],
+    [5, 6]
+]
+
+const t7 = () => {
+    //let out7 = ''
+    let arr7Res = []
+    for (let i = 0; i < arr7.length; i++) {
+        for (let k = 0; k < arr7[i].length; k++) {
+            //out7 += `${arr7[i][k]}&nbsp;`
+            arr7Res.push(arr7[i][k])
+        }
+    }
+    //div7.innerHTML = out7
+    div7.innerHTML = `${arr7Res.join(',&nbsp;')}`
+    console.log(arr7Res)
+}
+
+btn7.addEventListener('click', t7)
