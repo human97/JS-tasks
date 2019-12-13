@@ -31,12 +31,12 @@ btn2.addEventListener('click', t2)
 
 
 // #03
-const divS3 = document.getElementsByClassName('div3')
+const divs3 = document.getElementsByClassName('div3')
 const btn3 = document.querySelector('.btn3')
 
 const t3 = () => {
-    for (let i = 0; i < divS3.length; i++) {
-        divS3[i].textContent = 3
+    for (let i = 0; i < divs3.length; i++) {
+        divs3[i].textContent = 3
     }
 }
 
@@ -44,13 +44,26 @@ btn3.addEventListener('click', t3)
 
 
 // #04
-const divS4 = document.querySelectorAll('.div3')
+const divs4 = document.querySelectorAll('.div3')
 const btn4 = document.querySelector('.btn4')
 
 const t4 = () => {
-    for (let i = 0; i < divS4.length; i++) {
-        divS4[i].textContent = 4
+    for (let i = 0; i < divs4.length; i++) {
+        divs4[i].textContent = 4
     }
 }
 
 btn4.addEventListener('click', t4)
+
+
+// #05
+const btn5 = document.querySelector('.btn5')
+
+// в решении #03 уже получены элементы в переменную divs3(используем её)
+
+const t5=()=>{
+    const div5 = document.createElement('div')
+    divs3.push(div5)
+}
+
+btn5.addEventListener('click',t5) // TypeError: divs3.push is not a function
