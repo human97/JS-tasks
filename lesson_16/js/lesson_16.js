@@ -31,7 +31,7 @@ btn2.addEventListener('click', t2)
 
 
 // #03
-const divs3 = document.getElementsByClassName('div3')
+const divs3 = document.getElementsByClassName('div3') // HTMLCollection
 const btn3 = document.querySelector('.btn3')
 
 const t3 = () => {
@@ -44,7 +44,7 @@ btn3.addEventListener('click', t3)
 
 
 // #04
-const divs4 = document.querySelectorAll('.div3')
+const divs4 = document.querySelectorAll('.div3') // NodeList
 const btn4 = document.querySelector('.btn4')
 
 const t4 = () => {
@@ -59,9 +59,10 @@ btn4.addEventListener('click', t4)
 // #05
 const btn5 = document.querySelector('.btn5')
 
-// в решении #03 уже получены элементы в переменную divs3(используем её)
+// в решении #03 уже получены элементы, переменная divs3(используем её)
 
 const div5 = document.createElement('div')
+
 const t5 = () => {
     divs3.push(div5)
 }
@@ -71,4 +72,11 @@ btn5.addEventListener('click', t5) // TypeError: divs3.push is not a function
 
 // #06
 const btn6 = document.querySelector('.btn6')
-// в решении #05 элемент div уже создан div5(используем её)
+// в решении #05 элемент div уже создан, перменная div5(используем её)
+// в решении #04 уже получены элементы, переменная divs4(используем её)
+
+const t6 = () => {
+    divs4.push(div5)
+}
+
+btn6.addEventListener('click', t6) // TypeError: divs4.push is not a function
