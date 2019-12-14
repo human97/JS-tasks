@@ -191,3 +191,16 @@ const t12 = () => {
 }
 
 btn12.addEventListener('click', t12)
+
+
+// #13
+const divs13 = document.querySelectorAll('.div12')
+const btn13 = document.querySelector('.btn13')
+
+const t13 = () => {
+    for (let key in divs13) {
+        divs13[key].textContent = 'task-13'
+    }
+}
+
+btn13.addEventListener('click', t13)
