@@ -160,3 +160,21 @@ btn10.addEventListener('click', () => {
     }
     div10.innerHTML = out10
 })
+
+
+// #11
+const div11 = document.querySelector('.div11')
+const btn11 = document.querySelector('.btn11')
+const sel11 = document.querySelector('.sel11')
+
+const arr11 = [5, 7, 9, 11, 13, 15]
+
+btn11.addEventListener('click', () => {
+    let out11 = ''
+    let sel11Val = sel11.value
+    console.log(sel11Val)
+    for (let key in arr11) {
+        out11 += `${key}&nbsp;${sel11Val}&nbsp;${arr11[key]}<br>`
+    }
+    div11.innerHTML = out11
+})
