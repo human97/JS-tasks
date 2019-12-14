@@ -206,3 +206,22 @@ const t13 = () => {
 btn13.addEventListener('click', t13)
 
 
+// #14
+const btn14 = document.querySelector('.btn14')
+const arr14 = [
+    [1, 2],
+    [3, 4],
+    [5, 6]
+]
+let newArr14 = []
+
+const t14 = () => {
+    for (let key in arr14) {
+        for (let a in arr14[key]) {
+            newArr14.push(arr14[key][a])
+        }
+    }
+    console.log(newArr14)
+}
+
+btn14.addEventListener('click', t14)
