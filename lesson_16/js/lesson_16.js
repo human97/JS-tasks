@@ -178,3 +178,16 @@ btn11.addEventListener('click', () => {
     }
     div11.innerHTML = out11
 })
+
+
+// #12
+const divs12 = document.getElementsByClassName('div12')
+const btn12 = document.querySelector('.btn12')
+
+const t12 = () => {
+    for (let key in divs12) {
+        divs12[key].textContent = 'task-12'
+    }
+}
+
+btn12.addEventListener('click', t12)
