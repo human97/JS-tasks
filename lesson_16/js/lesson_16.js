@@ -118,9 +118,9 @@ const arr8 = [
     [5, 6]
 ]
 const t8 = () => {
-    let count = -1 // в этом случае в конце цикла count будет равен макс. индексу влож.массивов, т.к. отсчёт идет от 0
+    let count = 0
     for (let i = 0; i < arr8.length; i++) {
-        count++
+        count < i ? count = i : count
     }
     let arr8Res = count
     div8.textContent = arr8Res
@@ -228,4 +228,20 @@ btn14.addEventListener('click', t14)
 
 
 // #15
+const div15 = document.querySelector('.div15')
+const btn15 = document.querySelector('.btn15')
+const arr15 = [
+    [1, 2, 3],
+    [3, 4, 9],
+    [5, 6]
+]
 
+const t15 = () => {
+    let count = 0
+    for (let key in arr15) {
+        count < key ? count = key : count
+    }
+    div15.textContent = count
+}
+
+btn15.addEventListener('click', t15)
