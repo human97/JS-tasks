@@ -318,3 +318,24 @@ btn20.addEventListener('click', () => {
         item.textContent = 'task-20'
     }
 })
+
+
+// #21
+const btn21 = document.querySelector('.btn21')
+const arr21 = [
+    [1, 2],
+    [3, 4],
+    [5, 6]
+]
+
+const t21 = () => {
+    const newArr21 = []
+    for (let arr of arr21) {
+        for (let item of arr) {
+            newArr21.push(item)
+        }
+    }
+    console.log(newArr21)
+}
+
+btn21.addEventListener('click', t21)
