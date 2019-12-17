@@ -359,3 +359,18 @@ const t22 = () => {
 }
 
 btn22.addEventListener('click', t22)
+
+
+// #23
+const btn23 = document.querySelector('.btn23')
+const arr23 = [4, 6, 9, "hello"]
+let newArr23 = {}
+
+const t23 = () => {
+    for (let item of arr23) {
+        newArr23[item] = item
+    }
+    console.log(newArr23)
+}
+
+btn23.addEventListener('click', t23)
