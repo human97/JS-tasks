@@ -301,8 +301,20 @@ btn18.addEventListener('click', t18)
 // #19
 const divs19 = document.getElementsByClassName('div19')
 const btn19 = document.querySelector('.btn19')
+
 btn19.addEventListener('click', () => {
     for (let item of divs19) {
         item.textContent = 'task-19'
+    }
+})
+
+
+// #20
+const divs20 = document.querySelectorAll('.div19')
+const btn20 = document.querySelector('.btn20')
+
+btn20.addEventListener('click', () => {
+    for (let item of divs20) {
+        item.textContent = 'task-20'
     }
 })
