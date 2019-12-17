@@ -245,3 +245,19 @@ const t15 = () => {
 }
 
 btn15.addEventListener('click', t15)
+
+
+// #16
+const div16 = document.querySelector('.div16')
+const btn16 = document.querySelector('.btn16')
+const arr16 = [4, 6, 9, "hello"]
+
+const t16 = () => {
+    let newArr16 = {}
+    for (let key in arr16) {
+        newArr16[arr16[key]] = arr16[key]
+    }
+    console.log(newArr16)
+}
+
+btn16.addEventListener('click', t16)
