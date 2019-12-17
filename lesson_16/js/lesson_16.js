@@ -276,3 +276,23 @@ const t17 = () => {
 }
 
 btn17.addEventListener('click', t17)
+
+
+// #18
+const div18 = document.querySelector('.div18')
+const btn18 = document.querySelector('.btn18')
+const sel18 = document.querySelector('.sel18')
+
+const arr18 = [5, 7, 9, 11, 13, 15]
+
+const t18 = () => {
+    let out18 = ''
+    let index = 0
+    for (let key of arr18) {
+        out18 += `${index}&nbsp;${sel18.value}&nbsp;${key}<br>`
+        index++
+    }
+    div18.innerHTML = out18
+}
+
+btn18.addEventListener('click', t18)
