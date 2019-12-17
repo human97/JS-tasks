@@ -296,3 +296,13 @@ const t18 = () => {
 }
 
 btn18.addEventListener('click', t18)
+
+
+// #19
+const divs19 = document.getElementsByClassName('div19')
+const btn19 = document.querySelector('.btn19')
+btn19.addEventListener('click', () => {
+    for (let item of divs19) {
+        item.textContent = 'task-19'
+    }
+})
