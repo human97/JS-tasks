@@ -339,3 +339,23 @@ const t21 = () => {
 }
 
 btn21.addEventListener('click', t21)
+
+
+// #22
+const div22 = document.querySelector('.div22')
+const btn22 = document.querySelector('.btn22')
+const arr22 = [
+    [1, 2, 3],
+    [3, 4, 9],
+    [5, 6]
+]
+
+const t22 = () => {
+    let maxIndex = -1
+    for (let arr of arr22) {
+        maxIndex++
+    }
+    div22.textContent = maxIndex
+}
+
+btn22.addEventListener('click', t22)
