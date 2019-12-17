@@ -248,7 +248,6 @@ btn15.addEventListener('click', t15)
 
 
 // #16
-const div16 = document.querySelector('.div16')
 const btn16 = document.querySelector('.btn16')
 const arr16 = [4, 6, 9, "hello"]
 
@@ -261,3 +260,19 @@ const t16 = () => {
 }
 
 btn16.addEventListener('click', t16)
+
+
+// #17
+const div17 = document.querySelector('.div17')
+const btn17 = document.querySelector('.btn17')
+const arr17 = [5, 7, 9, 11, 13, 15]
+
+const t17 = () => {
+    let out17 = ''
+    for (let key of arr17) {
+        out17 += `${key}&nbsp;`
+    }
+    div17.innerHTML = out17
+}
+
+btn17.addEventListener('click', t17)
