@@ -80,8 +80,9 @@ const btn7 = document.querySelector('.btn7')
 const arr7 = ["php-7", "html", "css", 92, "6", "5", "hello", 32]
 const t7 = () => {
     const newArr7 = arr7.filter(item => {
-        if (typeof item === 'string' && item.length > 3) {
-
-        }
+        return typeof item === 'string' && item.length > 3
     })
+    console.log(newArr7)
 }
+
+btn7.addEventListener('click', t7)
