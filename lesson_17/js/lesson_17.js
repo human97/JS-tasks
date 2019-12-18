@@ -45,3 +45,18 @@ const t4 = () => {
 }
 
 btn4.addEventListener('click', t4)
+
+
+// #05
+const btn5 = document.querySelector('.btn5')
+const arr5 = [3, 14, 15, 92]
+const t5 = () => {
+    const newArr5 = arr5.filter(item => {
+        if (item % 2 === 0) {
+            return true
+        }
+    })
+    console.log(newArr5)
+}
+
+btn5.addEventListener('click', t5)
