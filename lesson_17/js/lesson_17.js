@@ -24,8 +24,24 @@ btn2.addEventListener('click', t2)
 const btn3 = document.querySelector('.btn3')
 const arr3 = [4, "3", 6, 7, "12", 34, "56", 78, 90, 11]
 const t3 = () => {
-    const newArr3 = arr3.map(item => Number(item))
+    const newArr3 = arr3.map(Number)
     console.log(newArr3)
 }
 
 btn3.addEventListener('click', t3)
+
+
+// #04
+const btn4 = document.querySelector('.btn4')
+const arr4 = [4, "3", 6, 7, "12", 34, "56", 78, 90, 11]
+const t4 = () => {
+    const newArr4 = []
+    arr4.map(item => {
+        if (typeof item === 'number') {
+            newArr4.push(item)
+        }
+    })
+    console.log(newArr4)
+}
+
+btn4.addEventListener('click', t4)
