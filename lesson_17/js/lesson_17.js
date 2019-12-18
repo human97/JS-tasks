@@ -67,11 +67,21 @@ const btn6 = document.querySelector('.btn6')
 const arr6 = [3, 14, 15, 92, "6", "5", "hello", 32]
 const t6 = () => {
     const newArr6 = arr6.filter(item => {
-        if (typeof item === 'number') {
-            return true
-        }
+        return typeof item === 'number'
     })
     console.log(newArr6)
 }
 
 btn6.addEventListener('click', t6)
+
+
+// #07
+const btn7 = document.querySelector('.btn7')
+const arr7 = ["php-7", "html", "css", 92, "6", "5", "hello", 32]
+const t7 = () => {
+    const newArr7 = arr7.filter(item => {
+        if (typeof item === 'string' && item.length > 3) {
+
+        }
+    })
+}
