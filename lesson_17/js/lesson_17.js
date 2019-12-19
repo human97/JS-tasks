@@ -94,7 +94,7 @@ const arr8 = [3, 14, 15, 92, "6", "5", "hello", 32]
 const t8 = () => {
     let newArr8 = []
     arr8.filter((item, index) => {
-        if (item % 2 === 0) {
+        if (item % 2 === 0 && typeof item === 'number') {
             newArr8.push(index)
         }
     })
