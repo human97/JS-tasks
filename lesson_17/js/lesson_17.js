@@ -102,3 +102,18 @@ const t8 = () => {
 }
 
 btn8.addEventListener('click', t8)
+
+
+// #09
+const btn9 = document.querySelector('.btn9')
+const arr9 = [3, "hello", 4, "world", 5, "hi"]
+const t9 = () => {
+    let arrNum9 = []
+    let arrStr9 = []
+    arr9.filter((item) => {
+        typeof item === 'number' ? arrNum9.push(item) : arrStr9.push(item)
+    })
+    console.log(arrNum9, arrStr9)
+}
+
+btn9.addEventListener('click', t9)
