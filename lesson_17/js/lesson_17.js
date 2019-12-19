@@ -117,3 +117,22 @@ const t9 = () => {
 }
 
 btn9.addEventListener('click', t9)
+
+
+// #10
+const btn10 = document.querySelector('.btn10')
+const arr10 = [
+    [1, 2, 3],
+    [3, 4, 6],
+    [4, 5, 7],
+    [8, 9, 3]
+]
+
+const t10 = () => {
+    let newArr10 = arr10.filter((arr) => {
+        return arr.includes(3)
+    })
+    console.log(newArr10)
+}
+
+btn10.addEventListener('click', t10)
