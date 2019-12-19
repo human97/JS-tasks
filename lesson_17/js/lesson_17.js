@@ -86,3 +86,19 @@ const t7 = () => {
 }
 
 btn7.addEventListener('click', t7)
+
+
+// #08
+const btn8 = document.querySelector('.btn8')
+const arr8 = [3, 14, 15, 92, "6", "5", "hello", 32]
+const t8 = () => {
+    let newArr8 = []
+    arr8.filter((item, index) => {
+        if (item % 2 === 0) {
+            newArr8.push(index)
+        }
+    })
+    console.log(newArr8)
+}
+
+btn8.addEventListener('click', t8)
