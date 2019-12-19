@@ -24,3 +24,19 @@ const t2 = () => {
 }
 
 btn2.addEventListener('click', t2)
+
+
+// #03
+const btn3 = document.querySelector('.btn3')
+const arr3 = [2, "hello", 3, "hi", 4, "Mazai"]
+const t3 = () => {
+    let newArr3 = []
+    arr3.forEach(e => {
+        if (typeof e === 'number') {
+            newArr3.push(e)
+        }
+    })
+    console.log(newArr3)
+}
+
+btn3.addEventListener('click', t3)
