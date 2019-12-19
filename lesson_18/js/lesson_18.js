@@ -40,3 +40,17 @@ const t3 = () => {
 }
 
 btn3.addEventListener('click', t3)
+
+
+// #04
+const btn4 = document.querySelector('.btn4')
+const spans4 = document.querySelectorAll('.span4')
+const t4 = () => {
+    let newArr4 = []
+    spans4.forEach(e => {
+        newArr4.push(e.getAttribute('data-span'))
+    })
+    console.log(newArr4)
+}
+
+btn4.addEventListener('click', t4)
