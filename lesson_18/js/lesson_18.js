@@ -54,3 +54,13 @@ const t4 = () => {
 }
 
 btn4.addEventListener('click', t4)
+
+
+// #05
+const ps5 = document.querySelectorAll('.p5').forEach(e => e.onclick = t5)
+
+function t5() {
+    let arr5 = []
+    arr5.push(this.getAttribute('data-p'))
+    console.log(arr5)
+}
