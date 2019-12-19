@@ -10,3 +10,17 @@ const t1 = () => {
 }
 
 btn1.addEventListener('click', t1)
+
+
+// #02
+const btn2 = document.querySelector('.btn2')
+const arr2 = [2, 3, 4, 5, 10, 11, 12]
+const t2 = () => {
+    let newArr2 = []
+    arr2.forEach(e => {
+        newArr2.push(e / 2)
+    })
+    console.log(newArr2)
+}
+
+btn2.addEventListener('click', t2)
