@@ -90,3 +90,15 @@ const t7 = () => {
 }
 
 btn7.addEventListener('click', t7)
+
+
+// #08
+const btn8 = document.querySelector('.btn8')
+const div8 = document.querySelector('.div8')
+const arr8 = [1, 2, 66, 77, 15]
+const t8 = () => {
+    let str8 = arr8.join('-')
+    div8.innerHTML = str8
+}
+
+btn8.addEventListener('click', t8)
