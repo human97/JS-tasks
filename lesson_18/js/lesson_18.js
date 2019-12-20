@@ -102,3 +102,22 @@ const t8 = () => {
 }
 
 btn8.addEventListener('click', t8)
+
+
+// #09
+const btn9 = document.querySelector('.btn9')
+const div9 = document.querySelector('.div9')
+const arr9 = [
+    ['hi', 'mahai'],
+    ['test', 'best']
+]
+const t9 = () => {
+    let str9 = ''
+    arr9.forEach(arr => {
+        str9 += arr.join('-') + '-'
+    })
+    console.log(str9)
+    div9.innerHTML = str9
+}
+
+btn9.addEventListener('click', t9)
