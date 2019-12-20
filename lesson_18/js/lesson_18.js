@@ -77,3 +77,16 @@ const t6 = () => {
 }
 
 btn6.addEventListener('click', t6)
+
+
+// #07
+const btn7 = document.querySelector('.btn7')
+const div7 = document.querySelector('.div7')
+const str7 = 'hello world hi mazai'
+const t7 = () => {
+    let arr7 = str7.split(' ')
+    console.log(arr7)
+    div7.innerHTML = arr7
+}
+
+btn7.addEventListener('click', t7)
