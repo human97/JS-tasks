@@ -122,3 +122,29 @@ const t9 = () => {
 }
 
 btn9.addEventListener('click', t9)
+
+
+// #10
+const btn10 = document.querySelector('.btn10')
+const div10 = document.querySelector('.div10')
+const arr10 = {
+    name: 'ivan',
+    age: 15,
+    sex: 1,
+    id: 45
+}
+
+const t10 = () => {
+    let out10 = '?'
+    // let newArr10 = Object.entries(arr10)
+    // newArr10.forEach(arr => {
+    //     out10 += arr.join('=') + '&'
+    // })
+    for (let key in arr10) {
+        out10 += `${key}=${arr10[key]}&`
+    }
+    div10.innerHTML = out10
+    console.log(out10)
+}
+
+btn10.addEventListener('click', t10)
