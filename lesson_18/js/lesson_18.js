@@ -64,3 +64,16 @@ function t5() {
     arr5.push(this.getAttribute('data-p'))
     console.log(arr5)
 }
+
+
+// #06
+const btn6 = document.querySelector('.btn6')
+const div6 = document.querySelector('.div6')
+const str6 = 'helloworld'
+const t6 = () => {
+    let arr6 = str6.split()
+    console.log(arr6)
+    div6.innerHTML = arr6
+}
+
+btn6.addEventListener('click', t6)
