@@ -34,3 +34,14 @@ function t3() {
 }
 
 div3.addEventListener('click', t3)
+
+
+// #04
+const div4 = document.querySelector('.div-4')
+const out4 = document.querySelector('.out-4')
+
+function t4() {
+    out4.textContent = this.textContent
+}
+
+div4.addEventListener('dblclick', t4)
