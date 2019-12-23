@@ -125,3 +125,13 @@ function t11() {
 
 div11.onmouseenter = t10
 div11.onmouseleave = t11
+
+
+// #12
+const div12 = document.querySelector('.div-12')
+
+function t12() {
+    this.classList.add('active')
+}
+
+div12.onmousedown = t12
