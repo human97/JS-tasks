@@ -104,3 +104,8 @@ function t9() {
 }
 
 div9.oncontextmenu = t9
+
+
+// #10
+const div10 = document.querySelector('.div-10')
+div10.onmouseenter = t9
