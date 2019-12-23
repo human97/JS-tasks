@@ -93,3 +93,14 @@ function t8() {
 
 const check8 = document.querySelector('.ch-8')
 check8.onchange = t8
+
+
+// #09
+const div9 = document.querySelector('.div-9')
+
+function t9() {
+    this.children[0].src = 'img/2.png'
+    return false
+}
+
+div9.oncontextmenu = t9
