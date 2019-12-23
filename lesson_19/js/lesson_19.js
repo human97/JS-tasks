@@ -65,3 +65,14 @@ function t6() {
 }
 
 div6.addEventListener('dblclick', t6)
+
+
+// #07
+const div7 = document.querySelector('.div-7')
+
+function t7() {
+    this.classList.toggle('active')
+    return false
+}
+
+div7.addEventListener('contextmenu', t7)
