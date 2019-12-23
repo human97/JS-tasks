@@ -75,4 +75,4 @@ function t7() {
     return false
 }
 
-div7.addEventListener('contextmenu', t7)
+div7.oncontextmenu = t7
