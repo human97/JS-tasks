@@ -55,3 +55,13 @@ function t5() {
 }
 
 div5.addEventListener('dblclick', t5)
+
+
+// #06
+const div6 = document.querySelector('.div-6')
+
+function t6() {
+    document.querySelector('.ul-6').classList.toggle('hide')
+}
+
+div6.addEventListener('dblclick', t6)
