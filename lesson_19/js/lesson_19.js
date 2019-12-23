@@ -20,3 +20,17 @@ function t2(e) {
 const div2 = document.querySelector('.div-2')
 const out2 = document.querySelector('.out-2')
 div2.addEventListener('click', t2)
+
+
+// #03
+let w3 = 75
+const div3 = document.querySelector('.div-3')
+const out3 = document.querySelector('.out-3')
+
+function t3() {
+    w3 += 5
+    div3.style.width = w3 + 'px'
+    out3.textContent = w3
+}
+
+div3.addEventListener('click', t3)
