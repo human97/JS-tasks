@@ -45,3 +45,13 @@ function t4() {
 }
 
 div4.addEventListener('dblclick', t4)
+
+
+// #05
+const div5 = document.querySelector('.div-5')
+
+function t5() {
+    this.classList.toggle('active')
+}
+
+div5.addEventListener('dblclick', t5)
