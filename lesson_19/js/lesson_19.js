@@ -108,4 +108,20 @@ div9.oncontextmenu = t9
 
 // #10
 const div10 = document.querySelector('.div-10')
-div10.onmouseenter = t9
+
+function t10() {
+    this.children[0].src = 'img/2.png'
+}
+
+div10.onmouseenter = t10
+
+
+// #11
+const div11 = document.querySelector('.div-11')
+
+function t11() {
+    this.children[0].src = 'img/1.png'
+}
+
+div11.onmouseenter = t10
+div11.onmouseleave = t11
