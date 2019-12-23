@@ -76,3 +76,20 @@ function t7() {
 }
 
 div7.oncontextmenu = t7
+
+
+// #08
+function t8() {
+    if (this.checked) {
+        document.oncontextmenu = () => {
+            return false
+        }
+    } else {
+        document.oncontextmenu = () => {
+            return true
+        }
+    }
+}
+
+const check8 = document.querySelector('.ch-8')
+check8.onchange = t8
