@@ -182,3 +182,16 @@ function t16() {
 }
 
 div16.onmousemove = t16
+
+
+// #17
+const btnOn17 = document.querySelector('.b-17_on')
+const btnOff17 = document.querySelector('.b-17_off')
+
+btnOn17.onclick = function on17() {
+    div16.onmousemove = t16
+}
+
+btnOff17.onclick = function off17() {
+    div16.onmousemove = false
+}
