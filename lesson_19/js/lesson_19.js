@@ -216,3 +216,13 @@ function t19() {
 }
 
 div19.onmouseout = t19
+
+
+// #20
+const prog20 = document.querySelector('progress')
+
+function t20() {
+    this.value++
+}
+
+prog20.onmousemove = t20
