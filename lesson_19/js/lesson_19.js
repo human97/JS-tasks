@@ -135,3 +135,27 @@ function t12() {
 }
 
 div12.onmousedown = t12
+
+
+// #13
+const div13 = document.querySelector('.div-13')
+
+function t13() {
+    this.classList.remove('active')
+}
+
+div13.onmousedown = t12
+div13.onmouseup = t13
+
+
+// #14
+function t14() {
+    this.classList.add('active')
+}
+
+const div14 = document.querySelector('.div-14')
+const btn14 = document.querySelector('.b-14')
+
+btn14.onclick = function addClick14() {
+    div14.onclick = t14
+}
