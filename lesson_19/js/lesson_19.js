@@ -159,3 +159,14 @@ const btn14 = document.querySelector('.b-14')
 btn14.onclick = function addClick14() {
     div14.onclick = t14
 }
+
+
+// #15
+function t15() {
+    num++
+    this.textContent = num
+}
+
+let num = 1
+const div15 = document.querySelector('.div-15')
+div15.onmousemove = t15
