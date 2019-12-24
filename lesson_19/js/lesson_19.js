@@ -195,3 +195,13 @@ btnOn17.onclick = function on17() {
 btnOff17.onclick = function off17() {
     div16.onmousemove = false
 }
+
+
+// #18
+const div18 = document.querySelector('.div-18')
+
+function t18() {
+    this.textContent = this.clientWidth
+}
+
+div18.onmouseenter = t18
