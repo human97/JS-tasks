@@ -205,3 +205,14 @@ function t18() {
 }
 
 div18.onmouseenter = t18
+
+
+// #19
+const div19 = document.querySelector('.div-19')
+
+function t19() {
+    this.style.fontSize = '8px'
+    this.textContent = this.classList
+}
+
+div19.onmouseout = t19
