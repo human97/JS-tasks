@@ -170,3 +170,15 @@ function t15() {
 let num = 1
 const div15 = document.querySelector('.div-15')
 div15.onmousemove = t15
+
+
+// #16
+const div16 = document.querySelector('.div-16')
+let w16 = div16.clientWidth
+
+function t16() {
+    w16++
+    this.style.width = `${w16}px`
+}
+
+div16.onmousemove = t16
