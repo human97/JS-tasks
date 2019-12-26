@@ -50,3 +50,14 @@ function t4(e) {
 }
 
 inp4.onkeypress = t4
+
+
+// #05
+const inp5 = document.querySelector('.i-5')
+const out5 = document.querySelector('.out-5')
+
+function t5(e) {
+    out5.textContent += e.key.toUpperCase()
+}
+
+inp5.onkeypress = t5
