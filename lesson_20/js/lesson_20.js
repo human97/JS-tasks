@@ -87,3 +87,25 @@ function t7() {
 }
 
 inp7.onkeypress = t7
+
+
+// #08
+const inp8 = document.querySelector('.i-8')
+const out8 = document.querySelector('.out-8')
+
+const arr8 = {
+    i: 1,
+    o: 0,
+    l: 7,
+}
+
+
+const t8 = e => {
+    if (e.key === 'i' || e.key === 'o' || e.key === 'l') {
+        out8.textContent += arr8[e.key]
+    } else {
+        out8.textContent += e.key
+    }
+}
+
+inp8.onkeypress = t8
