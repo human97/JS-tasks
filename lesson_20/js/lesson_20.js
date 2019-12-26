@@ -65,14 +65,9 @@ inp5.onkeypress = t5
 
 // #06
 const inp6 = document.querySelector('.i-6')
-const out6 = document.querySelector('.out-6')
 
-function t6(e) {
-    if (e.keyCode >= 65 && e.keyCode <= 90) {
-        out6.textContent += e.key
-        inp6.value += e.key.toLowerCase()
-        return false
-    }
+function t6() {
+    this.value = this.value.toLowerCase()
 }
 
-inp6.onkeydown = t6
+inp6.oninput = t6
