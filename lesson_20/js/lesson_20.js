@@ -101,11 +101,43 @@ const arr8 = {
 
 
 const t8 = e => {
-    if (e.key === 'i' || e.key === 'o' || e.key === 'l') {
-        out8.textContent += arr8[e.key]
-    } else {
-        out8.textContent += e.key
+    // if (e.key === 'i' || e.key === 'o' || e.key === 'l') {
+    //     out8.textContent += arr8[e.key]
+    // } else {
+    //     out8.textContent += e.key
+    // }
+
+    // e.key === 'i' || e.key === 'o' || e.key === 'l' ? out8.textContent += arr8[e.key] : out8.textContent += e.key // вариант через тернарное выражение
+
+
+    // вариант через switch case и без использования массива arr8
+    switch (e.key) {
+        case 'i':
+            out8.textContent += 1
+            break
+        case 'o':
+            out8.textContent += 0
+            break
+        case 'l':
+            out8.textContent += 7
+            break
+        default:
+            out8.textContent += e.key
+            break
     }
 }
 
 inp8.onkeypress = t8
+
+
+// #09
+const inp9 = document.querySelector('.i-9')
+const out9 = document.querySelector('.out-9')
+let count = 0
+
+const t9 = e => {
+    e.keyCode === 40 ? count++ : 0
+    out9.textContent = count
+}
+
+inp9.onkeydown = t9
