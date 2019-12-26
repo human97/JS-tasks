@@ -22,3 +22,20 @@ function t2(e) {
 }
 
 inp2.onkeypress = t2
+
+
+// #03
+const inp3 = document.querySelector('.i-3')
+const out3 = document.querySelector('.out-3')
+
+function t3(e) {
+    if (e.keyCode >= 48 && e.keyCode <= 57) {
+        out3.textContent = false
+    } else if (e.keyCode >= 97 && e.keyCode <= 122) {
+        out3.textContent = true
+    } else {
+        out3.textContent = 'error'
+    }
+}
+
+inp3.onkeypress = t3
