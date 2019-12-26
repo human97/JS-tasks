@@ -31,7 +31,7 @@ const out3 = document.querySelector('.out-3')
 function t3(e) {
     if (e.keyCode >= 48 && e.keyCode <= 57) {
         out3.textContent = false
-    } else if (e.keyCode >= 97 && e.keyCode <= 122) {
+    } else if (e.keyCode >= 97 && e.keyCode <= 122 || e.keyCode >= 65 && e.keyCode <= 90) {
         out3.textContent = true
     } else {
         out3.textContent = 'error'
@@ -39,3 +39,14 @@ function t3(e) {
 }
 
 inp3.onkeypress = t3
+
+
+// #04
+const inp4 = document.querySelector('.i-4')
+const out4 = document.querySelector('.out-4')
+
+function t4(e) {
+    out4.textContent += e.key.toLowerCase()
+}
+
+inp4.onkeypress = t4
