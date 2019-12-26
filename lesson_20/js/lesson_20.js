@@ -141,3 +141,32 @@ const t9 = e => {
 }
 
 inp9.onkeydown = t9
+
+
+// #10
+const inp10 = document.querySelector('.i-10')
+const img10 = document.querySelector('.img10')
+
+let w10 = img10.clientWidth
+let h10 = img10.clientHeight
+
+function t10(e) {
+    if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+        img10.style.width = `${w10++}px`
+    }
+    if (e.key === 'ArrowUp' || e.key === 'ArrowDown') {
+        img10.style.height = `${h10++}px`
+    }
+}
+
+inp10.onkeyup = t10
+
+
+
+
+
+
+
+document.addEventListener('keydown', function (e) {
+    console.log(e.keyCode, e.key)
+})
