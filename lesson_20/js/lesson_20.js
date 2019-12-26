@@ -71,3 +71,19 @@ function t6() {
 }
 
 inp6.oninput = t6
+
+
+// #07
+const inp7 = document.querySelector('.i-7')
+const out7 = document.querySelector('.out-7')
+
+const arr7 = [
+    'a', 'd', 'e', 'r', 99, true, false
+]
+
+function t7() {
+    let rand = Math.floor(Math.random() * arr7.length)
+    out7.textContent = arr7[rand]
+}
+
+inp7.onkeypress = t7
