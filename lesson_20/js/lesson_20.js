@@ -162,6 +162,32 @@ function t10(e) {
 inp10.onkeyup = t10
 
 
+// #11
+const inp11 = document.querySelector('.i-11')
+const keys = document.querySelectorAll('.key')
+
+function keyDown11(e) {
+    let keyCode = e.keyCode
+    let key = document.querySelector(`.key[data="${keyCode}"]`)
+    if (keyCode === 20) {
+        key.classList.toggle('pressed')
+    } else {
+        key.classList.add('pressed')
+    }
+}
+
+function keyUp11(e) {
+    let keyCode = e.keyCode
+    let key = document.querySelector(`.key[data="${keyCode}"]`)
+    if (keyCode === 20) {
+        return false
+    } else {
+        key.classList.remove('pressed')
+    }
+}
+
+inp11.onkeydown = keyDown11
+inp11.onkeyup = keyUp11
 
 
 
