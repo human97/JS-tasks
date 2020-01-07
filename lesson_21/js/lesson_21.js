@@ -60,3 +60,26 @@ function t7() {
 }
 
 div7.addEventListener('touchstart', t7)
+
+
+// #08
+const div8 = document.querySelector('.div-8')
+const arr8 = ['red', 'green', 'blue', 'orange', 'pink', 'yellow']
+
+function t8() {
+    let bgColor = Math.floor(Math.random() * arr8.length)
+    div8.style.backgroundColor = arr8[bgColor]
+}
+
+div8.addEventListener('touchstart', t8)
+
+
+// #09
+const div9 = document.querySelector('.div-9')
+const out9 = document.querySelector('.out-9')
+
+function t9(event) {
+    out9.textContent = event.touches.length
+}
+
+div9.addEventListener('touchstart', t9)
