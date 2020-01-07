@@ -12,3 +12,12 @@ function t2(event) {
 }
 
 document.querySelector('.div-2').addEventListener('touchstart', t2)
+
+
+// #03
+function t3(event) {
+    document.querySelector('.out-3').textContent = event.target.innerHTML[2]
+}
+
+document.querySelector('.div-3_1').addEventListener('touchstart', t3)
+document.querySelector('.div-3_2').addEventListener('touchstart', t3)
