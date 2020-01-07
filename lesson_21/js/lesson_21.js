@@ -15,12 +15,17 @@ document.querySelector('.div-2').addEventListener('touchstart', t2)
 
 
 // #03
-function t3(event) {
-    document.querySelector('.out-3').textContent = event.target.innerHTML[2]
-}
+const div3_1 = document.querySelector('.div-3_1')
+const div3_2 = document.querySelector('.div-3_2')
+const out3 = document.querySelector('.out-3')
 
-document.querySelector('.div-3_1').addEventListener('touchstart', t3)
-document.querySelector('.div-3_2').addEventListener('touchstart', t3)
+document.body.addEventListener('touchstart', function (event) {
+    if (div3_1 === event.target) {
+        out3.textContent = event.target.innerHTML[2]
+    } else if (div3_2 === event.target) {
+        out3.textContent = event.target.innerHTML[2]
+    }
+})
 
 
 // #04
