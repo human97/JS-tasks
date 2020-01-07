@@ -29,5 +29,15 @@ function t4() {
 }
 
 document.querySelector('.b-4').addEventListener('click', function () {
-    document.querySelector('.div-4').ontouchstart = t4
+    document.querySelector('.div-4').addEventListener('touchstart', t4)
+})
+
+
+// #05
+function t5() {
+    document.querySelector('.out-4').textContent += ''
+}
+
+document.querySelector('.b-5').addEventListener('click', function () {
+    document.querySelector('.div-4').removeEventListener('touchstart', t4)
 })
