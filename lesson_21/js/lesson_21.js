@@ -50,3 +50,13 @@ function t6() {
 }
 
 document.querySelector('.div-4').addEventListener('touchend', t6)
+
+
+// #07
+const div7 = document.querySelector('.div-7')
+
+function t7() {
+    div7.style.backgroundColor = 'red'
+}
+
+div7.addEventListener('touchstart', t7)
