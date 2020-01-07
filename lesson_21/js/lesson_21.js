@@ -83,3 +83,15 @@ function t9(event) {
 }
 
 div9.addEventListener('touchstart', t9)
+
+
+// #10
+const div10 = document.querySelector('.div-10')
+let w = div10.offsetWidth
+
+function t10() {
+    w++
+    div10.style.width = `${w}px`
+}
+
+div10.addEventListener('touchmove', t10)
