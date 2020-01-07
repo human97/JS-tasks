@@ -34,10 +34,14 @@ document.querySelector('.b-4').addEventListener('click', function () {
 
 
 // #05
-function t5() {
-    document.querySelector('.out-4').textContent += ''
-}
-
 document.querySelector('.b-5').addEventListener('click', function () {
     document.querySelector('.div-4').removeEventListener('touchstart', t4)
 })
+
+
+// #06
+function t6() {
+    document.querySelector('.out-6').textContent += 'touchend '
+}
+
+document.querySelector('.div-4').addEventListener('touchend', t6)
