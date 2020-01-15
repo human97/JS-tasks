@@ -74,3 +74,14 @@ div7.onmouseleave = function () {
     counter7++
     out7.textContent = counter7
 }
+
+
+// #08
+const div8 = document.querySelector('.div-8')
+const out8 = document.querySelector('.out-8')
+let counter8 = 0
+
+div8.onmouseout = function () {
+    counter8++
+    out8.textContent = counter8
+}
