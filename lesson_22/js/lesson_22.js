@@ -85,3 +85,16 @@ div8.onmouseout = function () {
     counter8++
     out8.textContent = counter8
 }
+// срабатывает так же как mouseleave
+
+
+// #09
+const div9 = document.querySelector('.div-9')
+const out9 = document.querySelector('.out-9')
+let counter9 = 0
+
+div9.onmouseover = function () {
+    counter9++
+    out9.textContent = counter9
+}
+// поведение как у mouseenter
