@@ -52,3 +52,25 @@ div5.onmousedown = function () {
     out5.textContent = counter5
 }
 // срабатывает при клике
+
+
+// #06
+const div6 = document.querySelector('.div-6')
+const out6 = document.querySelector('.out-6')
+let counter6 = 0
+
+div6.onmouseenter = function () {
+    counter6++
+    out6.textContent = counter6
+}
+
+
+// #07
+const div7 = document.querySelector('.div-7')
+const out7 = document.querySelector('.out-7')
+let counter7 = 0
+
+div7.onmouseleave = function () {
+    counter7++
+    out7.textContent = counter7
+}
