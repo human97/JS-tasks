@@ -29,3 +29,14 @@ div3.onmousemove = function () {
     counter3++
     out3.textContent = counter3
 }
+
+
+// #04
+const div4 = document.querySelector('.div-4')
+const out4 = document.querySelector('.out-4')
+let counter4 = 0
+
+div4.oncontextmenu = function () {
+    counter4++
+    out4.textContent = counter4
+}
