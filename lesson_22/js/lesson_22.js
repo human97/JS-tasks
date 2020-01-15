@@ -18,3 +18,14 @@ div2.ondblclick = function () {
     counter2++
     out2.textContent = counter2
 }
+
+
+// #03
+const div3 = document.querySelector('.div-3')
+const out3 = document.querySelector('.out-3')
+let counter3 = 0
+
+div3.onmousemove = function () {
+    counter3++
+    out3.textContent = counter3
+}
