@@ -89,9 +89,106 @@ div9.addEventListener('touchstart', t9)
 const div10 = document.querySelector('.div-10')
 let w = div10.offsetWidth
 
-function t10() {
+function t10(e) {
     w++
     div10.style.width = `${w}px`
 }
 
 div10.addEventListener('touchmove', t10)
+
+
+// #11
+const div11 = document.querySelector('.div-11')
+const out11 = document.querySelector('.out-11')
+
+function t11(event) {
+    out11.textContent = `${event.touches[0].radiusX} -- ${event.touches[0].radiusY}`
+}
+
+div11.addEventListener('touchstart', t11)
+
+
+// #12
+const arr12 = [
+    ['1.png', 'Youtube'],
+    ['2.png', 'Twitter'],
+    ['3.png', 'Skype'],
+    ['4.png', 'Facebook'],
+    ['5.png', 'Instagram'],
+    ['6.png', 'VK']
+]
+
+const div12wrapper = document.querySelector('.div-12-wrapper')
+const images12min = document.querySelectorAll('.img-12-min')
+const div12max = document.querySelector('.div-12-max')
+const p12text = document.querySelector('.img-12-text')
+const out12 = document.querySelector('.out-12')
+const btnNext = document.querySelector('.next')
+const btnPrev = document.querySelector('.prev')
+const btnReset = document.querySelector('.reset')
+let current12 = 0
+
+for (let key in arr12) {
+    for (let k = 0; k < arr12[key].length; k++) {}
+    console.log(arr12[key][0])
+    console.log(arr12[key][1])
+}
+
+function load12(img) {
+    img.classList.remove('active-img')
+    images12min[0].src = `img/${arr12[0][0]}`
+    div12max.children[0].src = ''
+    p12text.textContent = ''
+}
+
+function reset12() {
+    div12max.children[0].style.display = 'none'
+    images12min.forEach(load12)
+}
+
+window.addEventListener("load", reset12)
+
+
+function t12(e) {
+    div12wrapper.children[0].classList.add('active-img')
+    div12max.children[0].style.display = 'block'
+    div12max.children[0].src = e.target.src
+    p12text.textContent = `${arr12[current12][1]}`
+}
+
+function slider() {
+    images12min[0].src = `img/${arr12[current12][0]}`
+
+    if (images12min[0].src != div12max.children[0].src) {
+        div12wrapper.children[0].classList.remove('active-img')
+        p12text.textContent = ''
+    } else {
+        div12wrapper.children[0].classList.add('active-img')
+        p12text.textContent = `${arr12[current12][1]}`
+    }
+}
+
+images12min.forEach(function (img) {
+    img.addEventListener('touchstart', t12)
+})
+
+
+btnPrev.addEventListener('touchstart', function () {
+    if (current12 - 1 === -1) {
+        current12 = arr12.length - 1
+    } else {
+        current12--
+    }
+    slider()
+})
+
+btnNext.addEventListener('touchstart', function () {
+    if (current12 + 1 === arr12.length) {
+        current12 = 0
+    } else {
+        current12++
+    }
+    slider()
+})
+
+btnReset.addEventListener('touchstart', reset12)

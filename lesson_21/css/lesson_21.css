@@ -35,4 +35,5 @@ section {
 
 .active-img {
   border: 3px solid black;
+  border-radius: 100%;
 }
