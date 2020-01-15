@@ -40,3 +40,15 @@ div4.oncontextmenu = function () {
     counter4++
     out4.textContent = counter4
 }
+
+
+// #05
+const div5 = document.querySelector('.div-5')
+const out5 = document.querySelector('.out-5')
+let counter5 = 0
+
+div5.onmousedown = function () {
+    counter5++
+    out5.textContent = counter5
+}
+// срабатывает при клике
