@@ -98,3 +98,15 @@ div9.onmouseover = function () {
     out9.textContent = counter9
 }
 // поведение как у mouseenter
+
+
+// #10
+const div10 = document.querySelector('.div-10')
+const out10 = document.querySelector('.out-10')
+let counter10 = 0
+
+div10.onmouseup = function () {
+    counter10++
+    out10.textContent = counter10
+}
+// срабатывает при отжатии кнопки мыши
